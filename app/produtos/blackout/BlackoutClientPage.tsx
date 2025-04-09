@@ -165,7 +165,7 @@ export default function BlackoutClientPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("blackout.types.pleated.title")}</h3>
+                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("blackoutrolo")}</h3>
                 <p className="text-[#493F0B]/80 mb-4">{t("blackout.types.pleated.desc")}</p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
