@@ -12,22 +12,24 @@ export function HeroSection() {
   return (
     <section id="hero" className="relative overflow-hidden">
       {/* Background image with gradient overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/dwoz3mtpwimmlxdqpd5z"
+          alt="Modern apartment with large windows"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
+      </div>
 
       {/* Hero content */}
       <div className="container mx-auto max-w-7xl relative z-10 py-24 md:py-32 lg:py-40">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             {/* Add logo here */}
-            <div className="mb-6">
-              <div className="relative w-[220px] h-[70px] bg-white/10 backdrop-blur-sm p-3 rounded-lg mt-2">
-                <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/n1inal9dy8b5nxlxpydr"
-                  alt="WINDAYPVC Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
+
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               {t("home.hero.title")} <span className="text-[#d3d3d3]">{t("home.hero.subtitle")}</span>
