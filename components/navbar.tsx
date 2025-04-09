@@ -75,11 +75,13 @@ export function Navbar() {
     }
   }, [])
 
-  // Scroll to section function (only on homepage)
+  // Scroll to section function
   const scrollToSection = (sectionId: string) => {
     setMobileMenuOpen(false)
+    setProductsDropdownOpen(false)
 
     if (!isHomePage) {
+      // If not on home page, navigate to home page with the section hash
       router.push(`/#${sectionId}`)
       return
     }
@@ -105,6 +107,7 @@ export function Navbar() {
   const navigateToProduct = (productPath: string) => {
     setMobileMenuOpen(false)
     setProductsDropdownOpen(false)
+    setMobileProductsDropdownOpen(false)
     router.push(`/produtos/${productPath}`)
   }
 
@@ -114,11 +117,11 @@ export function Navbar() {
         scrolled ? "bg-[#d3d3d3]/95" : "bg-[#d3d3d3]/90"
       } backdrop-blur-sm border-b border-[#493F0B]/10 transition-all duration-300`}
     >
-      <div className="container mx-auto ">
+      <div className="container mx-auto py-3">
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="relative">
-            <div className="w-[160px] h-[70px] relative mt-2">
+            <div className="w-[140px] h-[50px] relative mt-2">
               <Image
                 src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/n1inal9dy8b5nxlxpydr"
                 alt="WINDAYPVC Logo"
@@ -138,7 +141,7 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
             >
-              {mobileMenuOpen ? <X className="!h-[25px] !w-[25px]" /> : <Menu className="!h-[25px] !w-[25px]" />}
+              {mobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
             </Button>
           </div>
 

@@ -18,6 +18,7 @@ function ProductCard({ id, title, description, imageSrc, imageAlt, pageUrl }: Pr
   const { t } = useLanguage()
 
   return (
+    <Link href={pageUrl}>
     <div id={id} className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col h-full">
       <div className="relative h-64 w-full">
         <Image src={imageSrc || "/placeholder.svg"} alt={imageAlt} fill className="object-cover" />
@@ -30,6 +31,7 @@ function ProductCard({ id, title, description, imageSrc, imageAlt, pageUrl }: Pr
         </div>
       </Link>
     </div>
+    </Link>
   )
 }
 
