@@ -109,7 +109,7 @@ export default function PVCClientPage() {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="relative h-64 p-4">
                 <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gt6bprxdoaadcjadfonh"
+                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gjgrvcanievk7qjuoeq6"
                   alt="Janela A70"
                   fill
                   className="object-contain rounded-lg"
@@ -135,6 +135,9 @@ export default function PVCClientPage() {
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
                 </Link>
+                <Link target="_blank" href=" https://www.cortizo.com/pt/sistemas/ver/75/a-70-batente.html">
+                  <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
+                </Link>
               </div>
             </div>
 
@@ -142,7 +145,7 @@ export default function PVCClientPage() {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="relative h-64 p-4">
                 <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gsjiz9rvlilfz1tw9g1s"
+                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/eerq3jd2ouvobchnboct"
                   alt="Janela C70"
                   fill
                   className="object-contain rounded-lg"
@@ -167,6 +170,9 @@ export default function PVCClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
+                </Link>
+                <Link target="_blank" href="https://www.cortizo.com/pt/sistemas/ver/76/c-70-de-correr.html">
+                  <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
                 </Link>
               </div>
             </div>
@@ -203,6 +209,7 @@ export default function PVCClientPage() {
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
                 </Link>
+                
               </div>
             </div>
 
@@ -235,6 +242,9 @@ export default function PVCClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
+                </Link>
+                <Link target="_blank" href="https://www.cortizo.com/pt/sistemas/ver/77/e-170-de-correr-elevavel.html ">
+                  <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
                 </Link>
               </div>
             </div>
@@ -294,3 +304,5 @@ export default function PVCClientPage() {
     </div>
   )
 }
+
+

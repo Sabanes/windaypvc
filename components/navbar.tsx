@@ -117,7 +117,7 @@ export function Navbar() {
         scrolled ? "bg-[#d3d3d3]/95" : "bg-[#d3d3d3]/90"
       } backdrop-blur-sm border-b border-[#493F0B]/10 transition-all duration-300`}
     >
-      <div className="container mx-auto py-1">
+      <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="relative">
@@ -224,7 +224,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#d3d3d3] border-t border-[#493F0B]/10 py-4 px-6 absolute w-full shadow-lg">
+        <div className="lg:hidden bg-[#d3d3d3] border-t border-[#493F0B]/10 py-2 px-6 absolute w-full shadow-lg">
           <nav className="flex flex-col space-y-4">
             {navigationItems.map((item) => (
               <div key={item.name}>
