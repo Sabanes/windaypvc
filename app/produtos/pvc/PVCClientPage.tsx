@@ -76,9 +76,9 @@ function ModelCard({
           {isDetailsOpen ? "Hide Technical Details" : "Show Technical Details"}
         </Button>
         {isDetailsOpen && (
-          <pre className="whitespace-pre-wrap text-sm text-[#493F0B]/90 mt-4 bg-[#f1f1f1] p-4 rounded-md border border-[#493F0B]/20">
+          <div className="whitespace-pre-wrap text-sm text-[#493F0B]/90 mt-4 bg-[#f1f1f1] p-4 rounded-md border border-[#493F0B]/20">
             {technicalDetails}
-          </pre>
+          </div>
         )}
       </div>
     </div>
