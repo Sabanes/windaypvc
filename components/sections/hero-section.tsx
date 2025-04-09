@@ -12,17 +12,6 @@ export function HeroSection() {
   return (
     <section id="hero" className="relative overflow-hidden">
       {/* Background image with gradient overlay */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/dwoz3mtpwimmlxdqpd5z"
-          alt="Modern apartment with large windows"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
-      </div>
 
       {/* Hero content */}
       <div className="container mx-auto max-w-7xl relative z-10 py-24 md:py-32 lg:py-40">
