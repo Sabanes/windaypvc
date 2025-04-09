@@ -16,7 +16,7 @@ export default function BlackoutClientPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/lewvjri8ky0wpaapye79"
+            src="https://res.cloudinary.com/dcraqvlmb/image/upload/c_crop,g_center,w_0.80/Winday/wecavkieqjpjhj0ghqzh"
             alt={t("blackout.title")}
             fill
             className="object-cover"
@@ -123,6 +123,42 @@ export default function BlackoutClientPage() {
               <div className="relative h-64">
                 <Image
                   src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/g3cboxmh8ydptaozt4gv"
+                  alt={t("blackout.types.pleated.title")}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("blackout.types.pleated.title")}</h3>
+                <p className="text-[#493F0B]/80 mb-4">{t("blackout.types.pleated.desc")}</p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start">
+                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80">{t("blackout.types.pleated.feature1")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80">{t("blackout.types.pleated.feature2")}</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80">{t("blackout.types.pleated.feature3")}</span>
+                  </li>
+                </ul>
+                <Link href="/contacto">
+                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
+                    {t("blackout.more.info")}
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+
+            {/* Blackout rolo */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <div className="relative h-64">
+                <Image
+                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/c_crop,g_center,w_0.80/Winday/wecavkieqjpjhj0ghqzh"
                   alt={t("blackout.types.pleated.title")}
                   fill
                   className="object-cover"

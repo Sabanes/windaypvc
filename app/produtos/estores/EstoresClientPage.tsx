@@ -149,38 +149,6 @@ export default function EstoresClientPage() {
               </div>
             </div>
 
-            {/* Estores Interior */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64">
-                <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/vm4rx3lf2lhonjgtypb5"
-                  alt={t("estores.interior.title")}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("estores.interior.title")}</h3>
-                <p className="text-[#493F0B]/80 mb-4">{t("estores.interior.desc")}</p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("estores.interior.feature1")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("estores.interior.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("estores.interior.feature3")}</span>
-                  </li>
-                </ul>
-                <Link href="/contacto">
-                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>

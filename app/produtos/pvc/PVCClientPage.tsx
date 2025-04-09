@@ -172,37 +172,6 @@ export default function PVCClientPage() {
             </div>
 
             {/* Corredora Enlevável */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64">
-                <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/loz4eb5is806pdlyjvpb"
-                  alt="Corredora Enlevável"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("pvc.categories.corredora.title")}</h3>
-                <p className="text-[#493F0B]/80 mb-4">{t("pvc.categories.corredora.desc")}</p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.corredora.feature1")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.corredora.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.corredora.feature3")}</span>
-                  </li>
-                </ul>
-                <Link href="/contacto">
-                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
-                </Link>
-              </div>
-            </div>
 
             {/* Janela Projetante */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
@@ -241,7 +210,7 @@ export default function PVCClientPage() {
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="relative h-64 p-4">
                 <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/tfpz2lfqt81ushrgdllk"
+                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/loz4eb5is806pdlyjvpb"
                   alt="E 170 de Correr Elevável"
                   fill
                   className="object-contain rounded-lg"
