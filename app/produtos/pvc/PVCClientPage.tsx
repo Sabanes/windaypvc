@@ -176,56 +176,6 @@ export default function PVCClientPage() {
         </div>
       </section>
 
-      
-
-    {/* Models Overview Section */}
-{/* Models Overview Section */}
-<section className="py-16 bg-[#f3f3f3]">
-      <div className="container mx-auto max-w-7xl px-6">
-        <h2 className="text-3xl font-bold text-[#493F0B] mb-12 text-center">{t("pvc.models.title")}</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Use an array to map over instead of manually placing components */}
-          {[
-            {
-              id: "a70-model",
-              title: t("pvc.models.a70.title"),
-              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gt6bprxdoaadcjadfonh",
-              description: t("pvc.models.a70.description"),
-              technicalDetails: t("pvc.models.a70.details")
-            },
-            {
-              id: "c70-model",
-              title: t("pvc.models.c70.title"),
-              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gsjiz9rvlilfz1tw9g1s",
-              description: t("pvc.models.c70.description"),
-              technicalDetails: t("pvc.models.c70.details")
-            },
-            {
-              id: "e170-model",
-              title: t("pvc.models.e170.title"),
-              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/tfpz2lfqt81ushrgdllk",
-              description: t("pvc.models.e170.description"),
-              technicalDetails: t("pvc.models.e170.details")
-            }
-          ].map((model) => (
-            <div key={model.id} className="card-wrapper">
-              <ModelCard
-                id={model.id}
-                title={model.title}
-                image={model.image}
-                description={model.description}
-                technicalDetails={model.technicalDetails}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>  
-  )
-
-
-
 
 
       {/* Categories Section */}
@@ -265,7 +215,7 @@ export default function PVCClientPage() {
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
                 </Link>
-                <Link target="_blank" href=" https://www.cortizo.com/pt/sistemas/ver/75/a-70-batente.html">
+                <Link href="#models">
                   <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
                 </Link>
               </div>
@@ -301,7 +251,7 @@ export default function PVCClientPage() {
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
                 </Link>
-                <Link target="_blank" href="https://www.cortizo.com/pt/sistemas/ver/76/c-70-de-correr.html">
+                <Link  href="#models">
                   <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
                 </Link>
               </div>
@@ -373,7 +323,7 @@ export default function PVCClientPage() {
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
                 </Link>
-                <Link target="_blank" href="https://www.cortizo.com/pt/sistemas/ver/77/e-170-de-correr-elevavel.html ">
+                <Link  href="#models">
                   <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
                 </Link>
               </div>
@@ -381,6 +331,51 @@ export default function PVCClientPage() {
           </div>
         </div>
       </section>
+
+{/* Models Overview Section */}
+<section id="models" className="py-16 bg-[#f3f3f3]">
+      <div className="container mx-auto max-w-7xl px-6">
+        <h2 className="text-3xl font-bold text-[#493F0B] mb-12 text-center">{t("pvc.models.title")}</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Use an array to map over instead of manually placing components */}
+          {[
+            {
+              id: "a70-model",
+              title: t("pvc.models.a70.title"),
+              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gt6bprxdoaadcjadfonh",
+              description: t("pvc.models.a70.description"),
+              technicalDetails: t("pvc.models.a70.details")
+            },
+            {
+              id: "c70-model",
+              title: t("pvc.models.c70.title"),
+              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gsjiz9rvlilfz1tw9g1s",
+              description: t("pvc.models.c70.description"),
+              technicalDetails: t("pvc.models.c70.details")
+            },
+            {
+              id: "e170-model",
+              title: t("pvc.models.e170.title"),
+              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/tfpz2lfqt81ushrgdllk",
+              description: t("pvc.models.e170.description"),
+              technicalDetails: t("pvc.models.e170.details")
+            }
+          ].map((model) => (
+            <div key={model.id} className="card-wrapper">
+              <ModelCard
+                id={model.id}
+                title={model.title}
+                image={model.image}
+                description={model.description}
+                technicalDetails={model.technicalDetails}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>  
+  )
 
       {/* CLASSE+ Certification Section */}
       <section className="py-16 bg-[#493F0B]/5">
