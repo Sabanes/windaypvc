@@ -5,7 +5,85 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowLeft, Check } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import { useCallback, useEffect, useRef, useState } from "react"
 
+// First, let's update the ModelCard component
+function ModelCard({
+  title,
+  image,
+  description,
+  technicalDetails,
+  id
+}: {
+  title: string
+  image: string
+  description: string
+  technicalDetails: string
+  id: string
+}) {
+  // Use React's useRef to create a stable reference
+  const cardRef = useRef(null);
+  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
+
+  // Use useCallback to ensure stable function identity
+  const toggleDetails = useCallback((e) => {
+    // Stop event propagation to prevent bubbling
+    e.stopPropagation();
+    setIsDetailsOpen(prevState => !prevState);
+  }, []);
+
+  // Add click-outside handler to close details when clicking elsewhere
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (cardRef.current && !cardRef.current.contains(event.target) && isDetailsOpen) {
+        setIsDetailsOpen(false);
+      }
+    }
+    
+    // Only add listener if details are open
+    if (isDetailsOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isDetailsOpen]);
+
+  return (
+    <div 
+      ref={cardRef}
+      className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col"
+      data-card-id={id} // Add data attribute for debugging
+    >
+      <div className="relative h-64">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-contain rounded-t-lg"
+        />
+      </div>
+      <div className="p-6 flex flex-col justify-between flex-1">
+        <div>
+          <h3 className="text-xl font-bold text-[#493F0B] mb-2">{title}</h3>
+          <p className="text-[#493F0B]/80 mb-4">{description}</p>
+        </div>
+        <Button
+          onClick={toggleDetails}
+          className="w-full mt-2 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white"
+        >
+          {isDetailsOpen ? "Hide Technical Details" : "Show Technical Details"}
+        </Button>
+        {isDetailsOpen && (
+          <pre className="whitespace-pre-wrap text-sm text-[#493F0B]/90 mt-4 bg-[#f1f1f1] p-4 rounded-md border border-[#493F0B]/20">
+            {technicalDetails}
+          </pre>
+        )}
+      </div>
+    </div>
+  )
+}
 export default function PVCClientPage() {
   const { t } = useLanguage()
 
@@ -97,6 +175,58 @@ export default function PVCClientPage() {
           </div>
         </div>
       </section>
+
+      
+
+    {/* Models Overview Section */}
+{/* Models Overview Section */}
+<section className="py-16 bg-[#f3f3f3]">
+      <div className="container mx-auto max-w-7xl px-6">
+        <h2 className="text-3xl font-bold text-[#493F0B] mb-12 text-center">{t("pvc.models.title")}</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Use an array to map over instead of manually placing components */}
+          {[
+            {
+              id: "a70-model",
+              title: t("pvc.models.a70.title"),
+              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gt6bprxdoaadcjadfonh",
+              description: t("pvc.models.a70.description"),
+              technicalDetails: t("pvc.models.a70.details")
+            },
+            {
+              id: "c70-model",
+              title: t("pvc.models.c70.title"),
+              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gsjiz9rvlilfz1tw9g1s",
+              description: t("pvc.models.c70.description"),
+              technicalDetails: t("pvc.models.c70.details")
+            },
+            {
+              id: "e170-model",
+              title: t("pvc.models.e170.title"),
+              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/tfpz2lfqt81ushrgdllk",
+              description: t("pvc.models.e170.description"),
+              technicalDetails: t("pvc.models.e170.details")
+            }
+          ].map((model) => (
+            <div key={model.id} className="card-wrapper">
+              <ModelCard
+                id={model.id}
+                title={model.title}
+                image={model.image}
+                description={model.description}
+                technicalDetails={model.technicalDetails}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>  
+  )
+
+
+
+
 
       {/* Categories Section */}
       <section className="py-16">

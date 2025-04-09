@@ -415,5 +415,17 @@
     "blackout.cta.button": "Solicitar Orçamento Gratuito",
     "blackout.more.info": "Mais Informações",
     "blackoutrolo": "Blackout rolo",
-    "pvc.more.details": "Detalhes Técnicos"
+    "pvc.more.details": "Detalhes Técnicos",
+    "pvc.models.title": "Modelos de PVC",
+"pvc.models.a70.title": "A70",
+"pvc.models.a70.description": "Sistema de batente com elevado isolamento e várias possibilidades de abertura.",
+"pvc.models.a70.details": "• Máximo envidraçamento: 42 mm\n\n• Possibilidades de abertura:\nInterior: batente, oscilo-batente, harmónio, osciloparalela, basculante\nExterior: batente\n\n• Secções:\nAro fixo: 70 mm\nFolha: 70 / 80 mm\n\n• Limitações dimensionais (branco):\nJanela: L = 360–1300 mm | A = 450–2300 mm\nBalconera: L = 360–1300 mm | A = 600–2400 mm\nPorta: L = 700–1300 mm | A = 600–2500 mm\n\n• Peso máximo:\nJanela: 130 kg\nPorta-janela: 130 kg\nPorta: 160 kg\n\n• Acabamentos:\nBranco, Cores, Bi-color, Imitação madeira",
+
+"pvc.models.c70.title": "C70",
+"pvc.models.c70.description": "Sistema de correr leve, funcional e com ótimo desempenho térmico.",
+"pvc.models.c70.details": "• Máximo envidraçamento: 28 mm\n\n• Possibilidades de abertura:\nCorrer com 2, 3 ou 4 folhas\n\n• Secções:\nAro fixo: 70 mm\nFolha: 46 mm\n\n• Dimensões máximas:\nJanela: L = 1400 mm | A = 1800 mm\nPorta-janela: L = 1800 mm | A = 2600 mm\n\n• Peso máximo: 140 kg\n\n• Acabamentos:\nBranco, Cores, Bi-color, Imitação madeira",
+
+"pvc.models.e170.title": "E170",
+"pvc.models.e170.description": "Sistema de correr elevável robusto para grandes vãos.",
+"pvc.models.e170.details": "• Máximo envidraçamento: 40 mm\n\n• Possibilidades de abertura:\nCorrer com 1, 2 ou 4 folhas\n\n• Secções:\nAro fixo: 170 mm\nFolha: 70 mm\n\n• Dimensões máximas:\nL = 3000 mm | A = 2800 mm\n\n• Peso máximo:\nSTAC: 300 kg\nMACO: 320 kg\n\n• Acabamentos:\nBranco, Cores, Bi-color, Imitação madeira, Metálico"
   }

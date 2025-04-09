@@ -453,5 +453,17 @@
       "Our blackout systems offer the perfect solution for those seeking absolute light control and privacy. Request a free quote and transform your environment.",
     "blackout.cta.button": "Request a Free Quote",
     "blackoutrolo": "Blackout roller blind",
-    "pvc.more.details": "Technical Details"
+    "pvc.more.details": "Technical Details",
+    "pvc.models.title": "PVC Models",
+"pvc.models.a70.title": "A70",
+"pvc.models.a70.description": "High-insulation inward-opening system with multiple opening options.",
+"pvc.models.a70.details": "• Maximum glazing: 42 mm\n\n• Opening types:\nInterior: side-hung, tilt-and-turn, accordion, tilt-slide, hopper\nExterior: side-hung\n\n• Profiles:\nFrame: 70 mm\nSash: 70 / 80 mm\n\n• Max dimensions (white sash):\nWindow: W = 360–1300 mm | H = 450–2300 mm\nBalcony door: W = 360–1300 mm | H = 600–2400 mm\nDoor: W = 700–1300 mm | H = 600–2500 mm\n\n• Max weight:\nWindow: 130 kg\nBalcony door: 130 kg\nDoor: 160 kg\n\n• Finishes:\nWhite, Colors, Bi-color, Wood effect",
+
+"pvc.models.c70.title": "C70",
+"pvc.models.c70.description": "Sliding system with elegant design and excellent performance.",
+"pvc.models.c70.details": "• Maximum glazing: 28 mm\n\n• Opening types:\nSliding 2, 3 or 4 sashes\n\n• Profiles:\nFrame: 70 mm\nSash: 46 mm\n\n• Max dimensions:\nWindow: W = 1400 mm | H = 1800 mm\nBalcony door: W = 1800 mm | H = 2600 mm\n\n• Max weight: 140 kg\n\n• Finishes:\nWhite, Colors, Bi-color, Wood effect",
+
+"pvc.models.e170.title": "E170",
+"pvc.models.e170.description": "Lift & slide system for large dimensions and high performance.",
+"pvc.models.e170.details": "• Maximum glazing: 40 mm\n\n• Opening types:\nSliding 1, 2 or 4 sashes\n\n• Profiles:\nFrame: 170 mm\nSash: 70 mm\n\n• Max dimensions:\nW = 3000 mm | H = 2800 mm\n\n• Max weight:\nSTAC: 300 kg\nMACO: 320 kg\n\n• Finishes:\nWhite, Colors, Bi-color, Wood effect, Metallic"
   }
