@@ -117,11 +117,11 @@ export function Navbar() {
         scrolled ? "bg-[#d3d3d3]/95" : "bg-[#d3d3d3]/90"
       } backdrop-blur-sm border-b border-[#493F0B]/10 transition-all duration-300`}
     >
-      <div className="container mx-auto py-3">
+      <div className="container mx-auto py-1">
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="relative">
-            <div className="w-[140px] h-[50px] relative mt-2">
+            <div className="w-[150px] h-[60px] relative mt-2">
               <Image
                 src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/n1inal9dy8b5nxlxpydr"
                 alt="WINDAYPVC Logo"
