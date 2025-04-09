@@ -1,0 +1,455 @@
+{
+    "nav.home": "Home",
+    "nav.products": "Products",
+    "nav.services": "Services",
+    "nav.about": "About Us",
+    "nav.benefits": "Benefits",
+    "nav.contact": "Contact",
+    "nav.quote": "Request Quote",
+
+
+    "product.pvc": "PVC",
+    "product.estores": "Blinds",
+    "product.mosquiteiras": "Mosquito Nets",
+    "product.portadas": "Shutters",
+    "product.vedaluz": "Vedaluz",
+    "product.blackout": "Blackout",
+
+    "home.hero.title": "PVC Windows and Doors",
+    "home.hero.subtitle": "of High Quality",
+    "home.hero.description":
+      "Your ideal choice for windows that open new horizons. Our PVC and aluminum windows and doors are durable, insulating, and modern in design.",
+    "home.hero.cta.quote": "Request a Quote",
+    "home.hero.cta.products": "Discover Our Products",
+    "home.hero.free.quote": "Free quote with no obligation",
+    "home.hero.durability": "Durability",
+    "home.hero.durability.desc": "Weather resistant",
+    "home.hero.insulation": "Insulation",
+    "home.hero.insulation.desc": "Thermal and acoustic",
+    "home.hero.design": "Design",
+    "home.hero.design.desc": "Modern and elegant",
+
+    "products.title": "Our Products",
+    "products.description":
+      "Discover our complete line of window and door solutions, combining quality, efficiency, and modern design.",
+    "products.learn.more": "Learn More",
+    "products.pvc.desc": "High-quality PVC windows and doors with excellent thermal and acoustic insulation.",
+    "products.estores.desc": "Modern blinds that provide light control, privacy, and thermal protection.",
+    "products.mosquiteiras.desc":
+      "Effective protection against insects without compromising ventilation and exterior view.",
+    "products.portadas.desc": "Elegant shutters that offer additional security and light control.",
+    "products.vedaluz.desc": "Sealing systems that ensure maximum energy efficiency and comfort.",
+    "products.blackout.desc": "Blackout systems that provide total light control and absolute privacy.",
+
+    "about.title": "About Us",
+    "about.description":
+      "We are specialists in the sale and installation of metaloplastic windows with Cortizo profile, offering solutions that combine innovation, aesthetics, and energy efficiency for homes and businesses.",
+    "about.experience": "More than 10 years of market experience",
+    "about.team": "Highly qualified technical team",
+    "about.quality": "Products with warranty and quality certification",
+    "about.commitment": "Commitment to customer satisfaction",
+    "about.cta": "Request a Quote",
+
+    "services.title": "Our Services",
+    "services.description":
+      "We offer a complete service, from measurement to maintenance, ensuring quality at every step.",
+    "services.measurement": "Measurement and Consulting",
+    "services.measurement.desc":
+      "Technical assessment and personalized consulting to find the best solution for your space.",
+    "services.manufacturing": "Window Manufacturing",
+    "services.manufacturing.desc":
+      "Production of PVC windows and doors with high-quality materials and advanced technology.",
+    "services.installation": "Installation",
+    "services.installation.desc":
+      "Professional installation carried out by specialized technicians, ensuring perfect operation.",
+    "services.maintenance": "Maintenance",
+    "services.maintenance.desc": "Preventive and corrective maintenance services to extend the life of your products.",
+    "services.cta": "Request a Quote",
+
+    "benefits.title": "Why Choose Us",
+    "benefits.description":
+      "Our windows and doors offer a unique combination of quality, efficiency, and design. Learn about the main benefits that make WINDAYPVC the ideal choice for your project.",
+    "benefits.energy": "Energy efficiency",
+    "benefits.energy.desc":
+      "Cortizo profile windows help keep heat in during winter and coolness in summer, reducing heating and air conditioning costs.",
+    "benefits.design": "Style and design",
+    "benefits.design.desc":
+      "A wide variety of colors and decorative elements allows you to choose windows that integrate perfectly into any interior.",
+    "benefits.security": "Security",
+    "benefits.security.desc":
+      "The Cortizo profile offers a high level of protection against intrusions, making our windows a safe choice for your home or office.",
+    "benefits.durability": "Durability",
+    "benefits.durability.desc":
+      "Thanks to the use of modern technologies and materials, our windows maintain their properties for decades.",
+    "benefits.approach": "Personalized approach",
+    "benefits.approach.desc":
+      "We offer window manufacturing in any shape and size, taking into account your wishes and the characteristics of the space.",
+    "benefits.cta": "Request a Quote",
+
+    "quote.text": "Your Comfort Is Our Priority",
+    "quote.author": "Founder of Winday, Mykola Spaskiy",
+
+    "partners.title": "Our Partners",
+    "partners.description": "We work with the best suppliers to ensure high-quality and durable products.",
+
+    "contact.title": "Contact Us",
+    "contact.description": "We are available to answer all your questions and provide a free quote with no obligation.",
+    "contact.form.title": "Request a Free Quote",
+    "contact.form.description": "Fill out the form below and we will contact you as soon as possible.",
+    "contact.info.title": "Contact Information",
+    "contact.phone": "Phone",
+    "contact.email": "Email",
+    "contact.social.title": "Social Media",
+
+    "pvc.title": "PVC Windows and Doors",
+    "pvc.description":
+      "High-quality solutions that combine superior thermal and acoustic insulation with modern design and exceptional durability.",
+    "pvc.back": "Back to home page",
+    "pvc.cta": "Request a Quote",
+    "pvc.benefits.title": "Benefits of PVC Windows and Doors",
+    "pvc.benefits.insulation": "Superior Insulation",
+    "pvc.benefits.insulation.desc":
+      "Significant reduction of external noise and better thermal efficiency, providing energy savings of up to 30% in climate control.",
+    "pvc.benefits.durability": "Exceptional Durability",
+    "pvc.benefits.durability.desc":
+      "Corrosion-resistant, they don't fade and don't require painting, maintaining their appearance and functionality for more than 50 years with minimal maintenance.",
+    "pvc.benefits.sustainability": "Sustainability",
+    "pvc.benefits.sustainability.desc":
+      "100% recyclable material with excellent energy efficiency, reducing your home's carbon footprint and contributing to a more sustainable planet.",
+    "pvc.video.title": "CORTIZO PVC Quality",
+    "pvc.video.description":
+      "Discover the excellence and quality of CORTIZO PVC profiles that we use in our windows and doors, ensuring maximum performance, durability, and energy efficiency.",
+    "pvc.categories.title": "Our Categories",
+    "pvc.categories.description":
+      "We offer a wide range of PVC windows and doors to meet your specific needs, combining functionality, aesthetics, and energy efficiency.",
+    "pvc.more.info": "More Information",
+    "pvc.certification.title": "CLASSE+ Certification",
+    "pvc.certification.description":
+      "Our products have CLASSE+, an ADENE initiative to facilitate the choice of energy-efficient products in building rehabilitation. The label aims to fill the gap of the absence of a mandatory European label for products such as windows, insulation, and paints, which influence the energy performance of buildings, offering consumers a simple and clear reference for more efficient solutions.",
+    "pvc.windows.title": "PVC Windows",
+    "pvc.windows.description":
+      "PVC windows improve thermal and acoustic insulation, increasing the energy efficiency of the house. To help with your choice, contact WINDAYPVC.",
+    "pvc.doors.title": "PVC Doors",
+    "pvc.doors.description":
+      "Our catalog of exterior PVC doors offers a wide variety of models and solutions. At WINDAYPVC, we sell PVC doors at the best market prices, ensuring your satisfaction.",
+    "pvc.cta.title": "Ready to transform your home?",
+    "pvc.cta.description":
+      "Contact us today for a free quote and discover how our PVC windows and doors can improve the comfort, energy efficiency, and value of your property.",
+    "pvc.cta.button": "Request a Free Quote",
+
+    "pvc.categories.a70.desc":
+      "Profile system with 70mm depth and 5 chambers, offering excellent thermal and acoustic insulation for casement windows and doors.",
+    "pvc.categories.a70.feature1": "Uw up to 0.9 W/m²K",
+    "pvc.categories.a70.feature2": "Glass up to 40mm",
+    "pvc.categories.a70.feature3": "Acoustic insulation up to 46dB",
+
+    "pvc.categories.c70.desc":
+      "Sliding system with 70mm depth, ideal for large openings with excellent insulation and ease of operation.",
+    "pvc.categories.c70.feature1": "Uw up to 1.3 W/m²K",
+    "pvc.categories.c70.feature2": "Glass up to 28mm",
+    "pvc.categories.c70.feature3": "High-quality roller system",
+
+    "pvc.categories.corredora.title": "Lift and Slide",
+    "pvc.categories.corredora.desc":
+      "Premium system for large openings, with a lifting mechanism that allows smooth operation even in large-sized doors.",
+    "pvc.categories.corredora.feature1": "Openings up to 6m wide",
+    "pvc.categories.corredora.feature2": "Glass up to 40mm",
+    "pvc.categories.corredora.feature3": "Superior watertightness",
+
+    "pvc.categories.projetante.title": "Projecting Window",
+    "pvc.categories.projetante.desc":
+      "System that allows partial opening of the window for ventilation, maintaining security and protection against rain.",
+    "pvc.categories.projetante.feature1": "Controlled ventilation",
+    "pvc.categories.projetante.feature2": "Multiple opening positions",
+    "pvc.categories.projetante.feature3": "Ideal for bathrooms and kitchens",
+
+    "pvc.categories.e170.title": "E 170 Lift and Slide",
+    "pvc.categories.e170.desc":
+      "High-performance premium system with 170mm depth, combining maximum thermal insulation with lift and slide functionality for large openings.",
+    "pvc.categories.e170.feature1": "Uw up to 0.7 W/m²K with 7 insulation chambers",
+    "pvc.categories.e170.feature2": "Openings up to 6.5m with glass up to 52mm",
+    "pvc.categories.e170.feature3": "Smooth operation with motorization option",
+
+    "footer.solutions": "Quality solutions in PVC windows and doors for your home or business.",
+    "footer.quick.links": "Quick Links",
+    "footer.products": "Products",
+    "footer.contact": "Contact",
+    "footer.contact.desc": "We are available to answer all your questions and provide a free quote.",
+    "footer.rights": "All rights reserved.",
+
+    "estores.title": "Blinds",
+    "estores.description":
+      "Modern solutions for light control, privacy, and thermal protection, combining functionality and design for any environment.",
+    "estores.back": "Back to home page",
+    "estores.cta": "Request a Quote",
+    "estores.benefits.title": "Benefits of Blinds",
+    "estores.benefits.light.title": "Light Control",
+    "estores.benefits.light.desc":
+      "Precise adjustment of natural light entry, creating the ideal environment for each moment of the day and protecting furniture and decoration against UV ray damage.",
+    "estores.benefits.energy.title": "Energy Efficiency",
+    "estores.benefits.energy.desc":
+      "Significant reduction of heat entry in summer and retention of internal heat in winter, contributing to energy savings in air conditioning throughout the year.",
+    "estores.benefits.privacy.title": "Privacy and Security",
+    "estores.benefits.privacy.desc":
+      "Total control over visibility from the outside to the inside, ensuring privacy when needed and adding an extra layer of security for your residence.",
+    "estores.categories.title": "Our Categories",
+    "estores.categories.description":
+      "We offer a variety of blinds to meet your specific needs for light control, privacy, and energy efficiency.",
+    "estores.thermal.title": "Thermal Blinds",
+    "estores.thermal.desc":
+      "Designed with high-density materials that provide superior thermal insulation, reducing heat transfer through windows.",
+    "estores.thermal.feature1": "Reduction of up to 40% in heat loss",
+    "estores.thermal.feature2": "Aluminum reflective layer",
+    "estores.thermal.feature3": "Ideal for extreme climates",
+    "estores.exterior.title": "Exterior Blinds",
+    "estores.exterior.desc":
+      "Installed on the outside of the window, they block heat before it reaches the glass, offering maximum thermal efficiency and protection against weather conditions.",
+    "estores.exterior.feature1": "Blocking up to 90% of solar heat",
+    "estores.exterior.feature2": "Resistant to strong winds",
+    "estores.exterior.feature3": "Motorization option",
+    "estores.interior.title": "Interior Blinds",
+    "estores.interior.desc":
+      "Versatile solutions for light control and privacy, available in various materials, colors, and styles to complement your decoration.",
+    "estores.interior.feature1": "Wide variety of fabrics",
+    "estores.interior.feature2": "Easy installation and maintenance",
+    "estores.interior.feature3": "Blackout and translucent options",
+    "estores.cta.title": "Improve the comfort of your home",
+    "estores.cta.description":
+      "Our blinds offer the perfect combination of functionality, energy efficiency, and aesthetics. Request a free quote and discover how we can transform your spaces.",
+    "estores.cta.button": "Request a Free Quote",
+
+    "mosquiteiras.title": "Mosquito Nets",
+    "mosquiteiras.description":
+      "Effective protection against insects without compromising ventilation and exterior view, ensuring comfort and well-being for your family.",
+    "estores.back": "Back to home page",
+    "estores.cta": "Request a Quote",
+    "estores.benefits.title": "Benefits of Mosquito Nets",
+    "estores.benefits.protection.title": "Protection Against Insects",
+    "estores.benefits.protection.desc":
+      "Effective barrier against mosquitoes, flies, bees, and other insects, keeping your home pest-free and reducing the risk of vector-borne diseases.",
+    "estores.benefits.ventilation.title": "Natural Ventilation",
+    "estores.benefits.ventilation.desc":
+      "Allows fresh air circulation while keeping insects outside, reducing the need for air conditioning and improving indoor air quality.",
+    "estores.benefits.visibility.title": "Preserved Visibility",
+    "estores.benefits.visibility.desc":
+      "Fine and discreet mesh that doesn't compromise the view to the outside, maintaining visual connection with the external environment and natural light entry.",
+    "estores.categories.title": "Our Categories",
+    "estores.categories.description":
+      "We offer different types of mosquito nets to meet your specific needs, combining functionality, durability, and aesthetics.",
+    "estores.thermal.title": "Thermal Blinds",
+    "estores.thermal.desc":
+      "Designed with high-density materials that provide superior thermal insulation, reducing heat transfer through windows.",
+    "estores.thermal.feature1": "Reduction of up to 40% in heat loss",
+    "estores.thermal.feature2": "Aluminum reflective layer",
+    "estores.thermal.feature3": "Ideal for extreme climates",
+    "estores.exterior.title": "Exterior Blinds",
+    "estores.exterior.desc":
+      "Installed on the outside of the window, they block heat before it reaches the glass, offering maximum thermal efficiency and protection against weather conditions.",
+    "estores.exterior.feature1": "Blocking up to 90% of solar heat",
+    "estores.exterior.feature2": "Resistant to strong winds",
+    "estores.exterior.feature3": "Motorization option",
+    "estores.interior.title": "Interior Blinds",
+    "estores.interior.desc":
+      "Versatile solutions for light control and privacy, available in various materials, colors, and styles to complement your decoration.",
+    "estores.interior.feature1": "Wide variety of fabrics",
+    "estores.interior.feature2": "Easy installation and maintenance",
+    "estores.interior.feature3": "Blackout and translucent options",
+    "estores.cta.title": "Improve the comfort of your home",
+    "estores.cta.description":
+      "Our blinds offer the perfect combination of functionality, energy efficiency, and aesthetics. Request a free quote and discover how we can transform your spaces.",
+    "estores.cta.button": "Request a Free Quote",
+
+    "mosquiteiras.title": "Mosquito Nets",
+    "mosquiteiras.description":
+      "Effective protection against insects without compromising ventilation and exterior view, ensuring comfort and well-being for your family.",
+    "mosquiteiras.back": "Back to home page",
+    "mosquiteiras.cta": "Request a Quote",
+    "mosquiteiras.benefits.title": "Benefits of Mosquito Nets",
+    "mosquiteiras.benefits.protection.title": "Protection Against Insects",
+    "mosquiteiras.benefits.protection.desc":
+      "Effective barrier against mosquitoes, flies, bees, and other insects, keeping your home pest-free and reducing the risk of vector-borne diseases.",
+    "mosquiteiras.benefits.ventilation.title": "Natural Ventilation",
+    "mosquiteiras.benefits.ventilation.desc":
+      "Allows fresh air circulation while keeping insects outside, reducing the need for air conditioning and improving indoor air quality.",
+    "mosquiteiras.benefits.visibility.title": "Preserved Visibility",
+    "mosquiteiras.benefits.visibility.desc":
+      "Fine and discreet mesh that doesn't compromise the view to the outside, maintaining visual connection with the external environment and natural light entry.",
+    "mosquiteiras.categories.title": "Our Categories",
+    "mosquiteiras.categories.description":
+      "We offer different types of mosquito nets to meet your specific needs, combining functionality, durability, and aesthetics.",
+    "mosquiteiras.fixed.title": "Fixed Net",
+    "mosquiteiras.fixed.desc":
+      "Permanent solution for windows that don't need to be opened frequently, offering continuous protection against insects with simple installation.",
+    "mosquiteiras.fixed.feature1": "Simple and discreet installation",
+    "mosquiteiras.fixed.feature2": "Maximum protection against insects",
+    "mosquiteiras.fixed.feature3": "Economical and durable solution",
+    "mosquiteiras.movable.title": "Removable Fixed Net",
+    "mosquiteiras.movable.desc":
+      "Combines the protection of a fixed net with the practicality of being able to remove it when necessary, ideal for cleaning or accessing the window.",
+    "mosquiteiras.movable.feature1": "Easy removal for cleaning",
+    "mosquiteiras.movable.feature2": "Secure fitting system",
+    "mosquiteiras.movable.feature3": "Ideal for occasionally used windows",
+    "mosquiteiras.pleated.title": "Pleated Net",
+    "mosquiteiras.pleated.desc":
+      "Modern design that folds like an accordion, saving space and offering smooth and silent operation, ideal for doors and large openings.",
+    "mosquiteiras.pleated.feature1": "Compact and elegant design",
+    "mosquiteiras.pleated.feature2": "Smooth and silent operation",
+    "mosquiteiras.pleated.feature3": "Ideal for doors and large openings",
+    "mosquiteiras.more.info": "More Information",
+    "mosquiteiras.cta.title": "Protect your home against insects",
+    "mosquiteiras.cta.description":
+      "Our mosquito nets are the ideal solution to keep your home ventilated and insect-free. Request a free quote and enjoy the comfort you deserve.",
+    "mosquiteiras.cta.button": "Request a Free Quote",
+
+    "portadas.back": "Back to home page",
+    "portadas.title": "Shutters",
+    "portadas.description":
+      "Elegant solutions that offer additional security and light control, enhancing the aesthetics of your facade while protecting your interior.",
+    "portadas.cta": "Request a Quote",
+    "portadas.benefits.title": "Benefits of Our Shutters",
+    "portadas.benefits.security.title": "Enhanced Security",
+    "portadas.benefits.security.desc":
+      "Additional barrier against intrusions, increasing the security of your home or business with robust locking systems and impact-resistant materials.",
+    "portadas.benefits.light.title": "Light Control",
+    "portadas.benefits.light.desc":
+      "Precise regulation of natural light entry, protecting furniture and decoration against solar rays and creating more comfortable environments on days of strong sunlight.",
+    "portadas.benefits.aesthetic.title": "Aesthetic Value",
+    "portadas.benefits.aesthetic.desc":
+      "Enhancement of the facade with elegant designs that complement the architecture of your home, available in various styles, colors, and finishes to suit any project.",
+    "portadas.features.title": "Premium Features",
+    "portadas.features.description":
+      "Our shutters are manufactured with the best materials and technologies available, ensuring durability, functionality, and beauty for your residence or business.",
+    "portadas.features.image.alt": "High-quality shutters",
+    "portadas.features.materials.title": "High-Quality Materials",
+    "portadas.features.materials.desc":
+      "Manufactured with high-strength aluminum or reinforced PVC, offering exceptional durability and resistance to weather conditions.",
+    "portadas.features.locking.title": "Advanced Locking Systems",
+    "portadas.features.locking.desc":
+      "Equipped with locks and security latches that offer additional protection against break-in attempts.",
+    "portadas.features.customization.title": "Complete Customization",
+    "portadas.features.customization.desc":
+      "Available in various styles, colors, and finishes to perfectly match the aesthetics of your home and your specific needs.",
+    "portadas.features.insulation.title": "Additional Insulation",
+    "portadas.features.insulation.desc":
+      "Provide an extra layer of thermal and acoustic insulation, contributing to interior comfort and energy efficiency of your home.",
+    "portadas.cta.title": "Enhance and protect your home",
+    "portadas.cta.description":
+      "Our shutters combine security, functionality, and beauty to transform your home. Contact us today for a free quote.",
+    "portadas.cta.button": "Request a Free Quote",
+
+    "vedaluz.back": "Back to home page",
+    "vedaluz.title": "Vedaluz",
+    "vedaluz.description":
+      "Advanced sealing systems that guarantee maximum energy efficiency and comfort for your home or office, with cutting-edge technology for superior insulation.",
+    "vedaluz.cta": "Get a Quote",
+    "vedaluz.benefits.title": "Benefits of Vedaluz Systems",
+    "vedaluz.benefits.energy.title": "Energy Efficiency",
+    "vedaluz.benefits.energy.desc":
+      "Significant reduction in heating and cooling costs thanks to excellent thermal insulation, contributing to savings of up to 40% on energy bills.",
+    "vedaluz.benefits.acoustic.title": "Acoustic Comfort",
+    "vedaluz.benefits.acoustic.desc":
+      "Drastic reduction of external noise, creating quieter and more pleasant environments with a reduction of up to 45dB, ideal for urban areas or near busy roads.",
+    "vedaluz.benefits.sealing.title": "Total Sealing",
+    "vedaluz.benefits.sealing.desc":
+      "Complete protection against water, wind and dust infiltration, ensuring cleaner and healthier environments, as well as extending the useful life of the building structure.",
+    "vedaluz.panels.title": "Panel Types",
+    "vedaluz.panels.description":
+      "We offer two types of Vedaluz panels to meet your specific style and functionality needs.",
+    "vedaluz.panels.smooth.title": "Smooth Panel",
+    "vedaluz.panels.smooth.desc":
+      "Minimalist and contemporary design with a smooth and uniform surface, ideal for modern environments and spaces that seek a clean and sophisticated aesthetic.",
+    "vedaluz.panels.smooth.feature1": "Elegant and uniform finish",
+    "vedaluz.panels.smooth.feature2": "Easy cleaning and maintenance",
+    "vedaluz.panels.smooth.feature3": "Ideal for contemporary environments",
+    "vedaluz.panels.wood.title": "Wood-Look Panel",
+    "vedaluz.panels.wood.desc":
+      "Inspired by the natural texture of wood, it offers a rustic and welcoming look, perfect for projects that seek to combine efficiency with traditional charm.",
+    "vedaluz.panels.wood.feature1": "Texture that mimics natural wood",
+    "vedaluz.panels.wood.feature2": "Greater resistance to scratches and impacts",
+    "vedaluz.panels.wood.feature3": "Perfect for rustic and traditional environments",
+    "vedaluz.technology.title": "Advanced Technology",
+    "vedaluz.technology.description":
+      "Vedaluz systems use cutting-edge technology to ensure maximum performance in thermal and acoustic insulation, with innovative solutions that adapt to your specific needs.",
+    "vedaluz.technology.system.title": "Multi-Chamber System",
+    "vedaluz.technology.system.desc":
+      "Profiles with multiple air chambers that create efficient thermal barriers, significantly reducing heat transfer between environments.",
+    "vedaluz.technology.seals.title": "High-Performance Seals",
+    "vedaluz.technology.seals.desc":
+      "Latest generation elastomeric materials that guarantee perfect sealing even after years of use, resistant to temperature variations and UV radiation.",
+    "vedaluz.technology.thermal.title": "Thermal Bridge Break",
+    "vedaluz.technology.thermal.desc":
+      "Technology that interrupts heat conduction through profiles, eliminating thermal bridges and ensuring superior insulation throughout the structure.",
+    "vedaluz.technology.glass.title": "Compatibility with Special Glass",
+    "vedaluz.technology.glass.desc":
+      "Systems designed to accommodate double and triple glazing with noble gases and low-emissivity films, maximizing thermal and acoustic performance.",
+    "vedaluz.technology.image.alt": "Vedaluz Technology",
+    "vedaluz.applications.title": "Applications",
+    "vedaluz.applications.description":
+      "Vedaluz systems are versatile and can be applied to various types of projects, always ensuring maximum performance in insulation and energy efficiency.",
+    "vedaluz.applications.residential.title": "High-End Residences",
+    "vedaluz.applications.residential.desc":
+      "Premium solutions for houses and apartments that seek maximum thermal and acoustic comfort, with sophisticated finishes and complete customization.",
+    "vedaluz.applications.commercial.title": "Commercial Buildings",
+    "vedaluz.applications.commercial.desc":
+      "Robust and efficient systems for offices, shops and hotels, contributing to the reduction of operational costs and creating more comfortable environments.",
+    "vedaluz.applications.special.title": "Special Environments",
+    "vedaluz.applications.special.desc":
+      "Specific solutions for hospitals, recording studios, concert halls and other environments that require exceptional acoustic and thermal insulation.",
+    "vedaluz.cta.title": "Maximize the comfort and efficiency of your home",
+    "vedaluz.cta.description":
+      "Our Vedaluz systems offer the most advanced insulation technology. Contact us today for a personalized diagnosis and free quote.",
+    "vedaluz.cta.button": "Request a Free Quote",
+    "vedaluz.more.info": "More Information",
+
+    "blackout.back": "Back to home page",
+    "blackout.title": "Blackout",
+    "blackout.description":
+      "Blackout solutions that provide total light control, absolute privacy and energy efficiency for your environment.",
+    "blackout.cta": "Get a Quote",
+    "blackout.benefits.title": "Benefits of Blackout Systems",
+    "blackout.benefits.light.title": "Total Light Blocking",
+    "blackout.benefits.light.desc":
+      "Completely eliminates the entry of external light, creating ideal environments for rest, home theaters or any space that requires total darkness.",
+    "blackout.benefits.privacy.title": "Absolute Privacy",
+    "blackout.benefits.privacy.desc":
+      "Guarantees total privacy at any time of the day, protecting your space from external views and creating a more reserved and secure environment.",
+    "blackout.benefits.energy.title": "Energy Efficiency",
+    "blackout.benefits.energy.desc":
+      "Contributes to thermal insulation, reducing heat entry in summer and heat loss in winter, resulting in significant energy savings.",
+    "blackout.types.title": "Types of Blackout",
+    "blackout.types.description":
+      "We offer different types of blackout systems to meet your specific light control and privacy needs.",
+    "blackout.types.normal.title": "Standard Blackout",
+    "blackout.types.normal.desc":
+      "Traditional blackout system with special fabric that completely blocks the passage of light, ideal for bedrooms, TV rooms and environments that need total light control.",
+    "blackout.types.normal.feature1": "Total light blocking",
+    "blackout.types.normal.feature2": "Easy manual or motorized operation",
+    "blackout.types.normal.feature3": "Wide variety of colors and finishes",
+    "blackout.types.pleated.title": "Pleated Blackout",
+    "blackout.types.pleated.desc":
+      "Modern system with pleated design that combines sophisticated aesthetics with superior functionality, saving space and offering precise light control.",
+    "blackout.types.pleated.feature1": "Compact and elegant design",
+    "blackout.types.pleated.feature2": "Smooth and silent operation",
+    "blackout.types.pleated.feature3": "Ideal for special-shaped windows",
+    "blackout.more.info": "More Information",
+    "blackout.features.title": "Premium Features",
+    "blackout.features.description":
+      "Our blackout systems are manufactured with high-quality materials and advanced technology, ensuring superior performance and exceptional durability.",
+    "blackout.features.fabrics.title": "Special Fabrics",
+    "blackout.features.fabrics.desc":
+      "We use fabrics with multiple layers that guarantee 100% light blocking, as well as advanced thermal and acoustic properties.",
+    "blackout.features.operation.title": "Operation Systems",
+    "blackout.features.operation.desc":
+      "Available with traditional manual operation or motorized systems with remote control and integration with home automation.",
+    "blackout.features.customization.title": "Complete Customization",
+    "blackout.features.customization.desc":
+      "Wide variety of colors, patterns and finishes to perfectly match your decoration and environment style.",
+    "blackout.features.installation.title": "Professional Installation",
+    "blackout.features.description":
+      "Specialized team that guarantees perfect installation, with impeccable finishing and proper system operation.",
+    "blackout.features.image.alt": "Blackout Features",
+    "blackout.cta.title": "Total light control and privacy",
+    "blackout.cta.description":
+      "Our blackout systems offer the perfect solution for those seeking absolute light control and privacy. Request a free quote and transform your environment.",
+    "blackout.cta.button": "Request a Free Quote"
+  }

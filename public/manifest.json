@@ -1,0 +1,23 @@
+{
+  "name": "WINDAYPVC - Janelas e Portas PVC de Alta Qualidade",
+  "short_name": "WINDAYPVC",
+  "icons": [
+    {
+      "src": "/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#493F0B",
+  "background_color": "#d3d3d3",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -1,0 +1,417 @@
+ {
+    "nav.home": "Início",
+    "nav.products": "Produtos",
+    "nav.services": "Serviços",
+    "nav.about": "Sobre nós",
+    "nav.benefits": "Vantagens",
+    "nav.contact": "Contacto",
+    "nav.quote": "Pedir Orçamento",
+
+    "product.pvc": "PVC",
+    "product.estores": "Estores",
+    "product.mosquiteiras": "Redes Mosquiteiras",
+    "product.portadas": "Portadas",
+    "product.vedaluz": "Vedaluz",
+    "product.blackout": "Blackout",
+
+    "home.hero.title": "Janelas e Portas PVC",
+    "home.hero.subtitle": "de Alta Qualidade",
+    "home.hero.description":
+      "Sua escolha ideal para janelas que abrem novos horizontes. Nossas janelas e portas em PVC e alumínio são duráveis, isolantes e de design moderno.",
+    "home.hero.cta.quote": "Solicitar Orçamento",
+    "home.hero.cta.products": "Conheça Nossos Produtos",
+    "home.hero.free.quote": "Orçamento gratuito e sem compromisso",
+    "home.hero.durability": "Durabilidade",
+    "home.hero.durability.desc": "Resistente às intempéries",
+    "home.hero.insulation": "Isolamento",
+    "home.hero.insulation.desc": "Térmico e acústico",
+    "home.hero.design": "Design",
+    "home.hero.design.desc": "Moderno e elegante",
+
+    "products.title": "Nossos Produtos",
+    "products.description":
+      "Descubra nossa linha completa de soluções para janelas e portas, combinando qualidade, eficiência e design moderno.",
+    "products.learn.more": "Saiba Mais",
+    "products.pvc.desc": "Janelas e portas em PVC de alta qualidade, com excelente isolamento térmico e acústico.",
+    "products.estores.desc": "Estores modernos que proporcionam controle de luz, privacidade e proteção térmica.",
+    "products.mosquiteiras.desc": "Proteção eficaz contra insetos sem comprometer a ventilação e a vista exterior.",
+    "products.portadas.desc": "Portadas elegantes que oferecem segurança adicional e controle de luminosidade.",
+    "products.vedaluz.desc": "Sistemas de vedação que garantem máxima eficiência energética e conforto",
+    "products.blackout.desc": "Sistemas blackout que proporcionam controle total de luminosidade e privacidade absoluta.",
+
+    "about.title": "Sobre Nós",
+    "about.description":
+      "Somos especialistas na venda e instalação de janelas de metaloplástico com perfil Cortizo oferecendo soluções que combinam inovação, estética e eficiência energética para casas e negócios.",
+    "about.experience": "Mais de 10 anos de experiência no mercado",
+    "about.team": "Equipe técnica altamente qualificada",
+    "about.quality": "Produtos com garantia e certificação de qualidade",
+    "about.commitment": "Compromisso com a satisfação do cliente",
+    "about.cta": "Pedir Orçamento",
+
+    "services.title": "Nossos Serviços",
+    "services.description":
+      "Oferecemos um serviço completo, desde a medição até a manutenção, garantindo qualidade em todas as etapas.",
+    "services.measurement": "Medição e Consultoria",
+    "services.measurement.desc":
+      "Avaliação técnica e consultoria personalizada para encontrar a melhor solução para seu espaço.",
+    "services.manufacturing": "Fabricação de Janelas",
+    "services.manufacturing.desc":
+      "Produção de janelas e portas em PVC com materiais de alta qualidade e tecnologia avançada.",
+    "services.installation": "Instalação",
+    "services.installation.desc":
+      "Instalação profissional realizada por técnicos especializados, garantindo perfeito funcionamento.",
+    "services.maintenance": "Manutenção",
+    "services.maintenance.desc":
+      "Serviços de manutenção preventiva e corretiva para prolongar a vida útil de seus produtos.",
+    "services.cta": "Pedir Orçamento",
+
+    "benefits.title": "Por Que Escolher-nos",
+    "benefits.description":
+      "Nossas janelas e portas oferecem uma combinação única de qualidade, eficiência e design. Conheça os principais benefícios que fazem da WINDAYPVC a escolha ideal para o seu projeto.",
+    "benefits.energy": "Eficiência energética",
+    "benefits.energy.desc":
+      "As janelas com perfil Cortizo ajudam a manter o calor no inverno e o frescor no verão, reduzindo os custos de aquecimento e ar condicionado.",
+    "benefits.design": "Estilo e design",
+    "benefits.design.desc":
+      "Uma ampla variedade de cores e elementos decorativos permite escolher janelas que se integram perfeitamente em qualquer interior.",
+    "benefits.security": "Segurança",
+    "benefits.security.desc":
+      "O perfil Cortizo oferece um alto nível de proteção contra intrusões, tornando as nossas janelas uma escolha segura para a sua casa ou escritório.",
+    "benefits.durability": "Durabilidade",
+    "benefits.durability.desc":
+      "Graças ao uso de tecnologias e materiais modernos, as nossas janelas mantêm as suas propriedades durante décadas.",
+    "benefits.approach": "Abordagem personalizada",
+    "benefits.approach.desc":
+      "Oferecemos a fabricação de janelas em qualquer forma e tamanho, tendo em conta os seus desejos e as características do espaço.",
+    "benefits.cta": "Pedir Orçamento",
+
+    "quote.text": "O Seu Conforto É A Nossa Prioridade",
+    "quote.author": "Fundador de Winday, Mykola Spaskiy",
+
+    "partners.title": "Nossos Parceiros",
+    "partners.description":
+      "Trabalhamos com os melhores fornecedores para garantir produtos de alta qualidade e durabilidade.",
+
+    "contact.title": "Contacte-nos",
+    "contact.description":
+      "Estamos disponíveis para responder a todas as suas questões e fornecer um orçamento gratuito e sem compromisso.",
+    "contact.form.title": "Solicite um Orçamento Gratuito",
+    "contact.form.description":
+      "Preencha o formulário abaixo e entraremos em contacto consigo o mais brevemente possível.",
+    "contact.info.title": "Informações de Contacto",
+    "contact.phone": "Telefone",
+    "contact.email": "Email",
+    "contact.social.title": "Redes Sociais",
+
+    "pvc.title": "Janelas e Portas em PVC",
+    "pvc.description":
+      "Soluções de alta qualidade que combinam isolamento térmico e acústico superior com design moderno e durabilidade excepcional.",
+    "pvc.back": "Voltar para página inicial",
+    "pvc.cta": "Pedir Orçamento",
+    "pvc.benefits.title": "Benefícios das Janelas e Portas em PVC",
+    "pvc.benefits.insulation": "Isolamento Superior",
+    "pvc.benefits.insulation.desc":
+      "Redução significativa de ruídos externos e melhor eficiência térmica, proporcionando economia de energia de até 30% em climatização.",
+    "pvc.benefits.durability": "Durabilidade Excepcional",
+    "pvc.benefits.durability.desc":
+      "Resistentes à corrosão, não desbotam e não requerem pintura, mantendo sua aparência e funcionalidade por mais de 50 anos com manutenção mínima.",
+    "pvc.benefits.sustainability": "Sustentabilidade",
+    "pvc.benefits.sustainability.desc":
+      "Material 100% reciclável e com excelente eficiência energética, reduzindo a pegada de carbono da sua residência e contribuindo para um planeta mais sustentável.",
+    "pvc.video.title": "Calidad CORTIZO PVC",
+    "pvc.video.description":
+      "Descubra a excelência e qualidade dos perfis CORTIZO PVC que utilizamos em nossas janelas e portas, garantindo o máximo desempenho, durabilidade e eficiência energética.",
+    "pvc.categories.title": "Nossas Categorias",
+    "pvc.categories.description":
+      "Oferecemos uma ampla gama de janelas e portas em PVC para atender às suas necessidades específicas, combinando funcionalidade, estética e eficiência energética.",
+    "pvc.more.info": "Mais Informações",
+    "pvc.certification.title": "Certificação CLASSE+",
+    "pvc.certification.description":
+      "Os nossos produtos têm o CLASSE+, uma iniciativa da ADENE para facilitar a escolha de produtos energeticamente eficientes na reabilitação de edifícios. A etiqueta visa preencher a lacuna da ausência de uma etiqueta europeia obrigatória para produtos como janelas, isolamentos e tintas, que influenciam o desempenho energético dos edifícios, oferecendo aos consumidores uma referência simples e clara para soluções mais eficientes.",
+    "pvc.windows.title": "Janelas PVC",
+    "pvc.windows.description":
+      "As janelas em PVC melhoram o isolamento térmico e acústico, aumentando a eficiência energética da casa. Para ajudar na escolha, entre em contato com a WINDAYPVC.",
+    "pvc.doors.title": "Portas PVC",
+    "pvc.doors.description":
+      "Nosso catálogo de portas exteriores em PVC oferece uma grande diversidade de modelos e soluções. Na WINDAYPVC, comercializamos portas em PVC aos melhores preços do mercado, garantindo sua satisfação.",
+    "pvc.cta.title": "Pronto para transformar sua casa?",
+    "pvc.cta.description":
+      "Entre em contato conosco hoje mesmo para um orçamento gratuito e descubra como nossas janelas e portas em PVC podem melhorar o conforto, a eficiência energética e o valor da sua propriedade.",
+    "pvc.cta.button": "Solicitar Orçamento Gratuito",
+
+    "pvc.categories.a70.desc":
+      "Sistema de perfil com 70mm de profundidade e 5 câmaras, oferecendo excelente isolamento térmico e acústico para janelas e portas de batente.",
+    "pvc.categories.a70.feature1": "Uw até 0,9 W/m²K",
+    "pvc.categories.a70.feature2": "Vidro até 40mm",
+    "pvc.categories.a70.feature3": "Isolamento acústico até 46dB",
+
+    "pvc.categories.c70.desc":
+      "Sistema de correr com 70mm de profundidade, ideal para grandes vãos com excelente isolamento e facilidade de operação.",
+    "pvc.categories.c70.feature1": "Uw até 1,3 W/m²K",
+    "pvc.categories.c70.feature2": "Vidro até 28mm",
+    "pvc.categories.c70.feature3": "Sistema de rolamentos de alta qualidade",
+
+    "pvc.categories.corredora.title": "Corredora Enlevável",
+    "pvc.categories.corredora.desc":
+      "Sistema premium para grandes vãos, com mecanismo de elevação que permite operação suave mesmo em portas de grandes dimensões.",
+    "pvc.categories.corredora.feature1": "Vãos até 6m de largura",
+    "pvc.categories.corredora.feature2": "Vidro até 40mm",
+    "pvc.categories.corredora.feature3": "Estanqueidade superior",
+
+    "pvc.categories.projetante.title": "Janela Projetante",
+    "pvc.categories.projetante.desc":
+      "Sistema que permite a abertura parcial da janela para ventilação, mantendo a segurança e proteção contra chuva.",
+    "pvc.categories.projetante.feature1": "Ventilação controlada",
+    "pvc.categories.projetante.feature2": "Múltiplas posições de abertura",
+    "pvc.categories.projetante.feature3": "Ideal para banheiros e cozinhas",
+
+    "pvc.categories.e170.title": "E 170 de Correr Elevável",
+    "pvc.categories.e170.desc":
+      "Sistema premium de alta performance com 170mm de profundidade, combinando o máximo isolamento térmico com a funcionalidade de correr elevável para grandes vãos.",
+    "pvc.categories.e170.feature1": "Uw até 0,7 W/m²K com 7 câmaras de isolamento",
+    "pvc.categories.e170.feature2": "Vãos até 6,5m com vidros até 52mm",
+    "pvc.categories.e170.feature3": "Operação suave com opção de motorização",
+
+    "footer.solutions": "Soluções de qualidade em janelas e portas de PVC para sua casa ou negócio.",
+    "footer.quick.links": "Links Rápidos",
+    "footer.products": "Produtos",
+    "footer.contact": "Contacto",
+    "footer.contact.desc":
+      "Estamos disponíveis para responder a todas as suas questões e fornecer um orçamento gratuito.",
+    "footer.rights": "Todos os direitos reservados.",
+
+    "estores.title": "Estores",
+    "estores.description":
+      "Soluções modernas para controle de luz, privacidade e proteção térmica, combinando funcionalidade e design para qualquer ambiente.",
+    "estores.back": "Voltar para página inicial",
+    "estores.cta": "Pedir Orçamento",
+    "estores.benefits.title": "Benefícios dos Estores",
+    "estores.benefits.light.title": "Controle de Luminosidade",
+    "estores.benefits.light.desc":
+      "Ajuste preciso da entrada de luz natural, criando o ambiente ideal para cada momento do dia e protegendo móveis e decoração contra os danos dos raios UV.",
+    "estores.benefits.energy.title": "Eficiência Energética",
+    "estores.benefits.energy.desc":
+      "Redução significativa da entrada de calor no verão e retenção do calor interno no inverno, contribuindo para a economia de energia em climatização durante todo o ano.",
+    "estores.benefits.privacy.title": "Privacidade e Segurança",
+    "estores.benefits.privacy.desc":
+      "Controle total sobre a visibilidade do exterior para o interior, garantindo privacidade quando necessário e adicionando uma camada extra de segurança para sua residência.",
+    "estores.categories.title": "Nossas Categorias",
+    "estores.categories.description":
+      "Oferecemos uma variedade de estores para atender às suas necessidades específicas de controle de luz, privacidade e eficiência energética.",
+    "estores.thermal.title": "Estores Térmicos",
+    "estores.thermal.desc":
+      "Projetados com materiais de alta densidade que proporcionam isolamento térmico superior, reduzindo a transferência de calor através das janelas.",
+    "estores.thermal.feature1": "Redução de até 40% na perda de calor",
+    "estores.thermal.feature2": "Camada refletora de alumínio",
+    "estores.thermal.feature3": "Ideal para climas extremos",
+    "estores.exterior.title": "Estores Exterior",
+    "estores.exterior.desc":
+      "Instalados na parte externa da janela, bloqueiam o calor antes que ele atinja o vidro, oferecendo máxima eficiência térmica e proteção contra intempéries.",
+    "estores.exterior.feature1": "Bloqueio de até 90% do calor solar",
+    "estores.exterior.feature2": "Resistentes a ventos fortes",
+    "estores.exterior.feature3": "Opção de motorização",
+    "estores.interior.title": "Estores Interior",
+    "estores.interior.desc":
+      "Soluções versáteis para controle de luz e privacidade, disponíveis em diversos materiais, cores e estilos para complementar sua decoração.",
+    "estores.interior.feature1": "Ampla variedade de tecidos",
+    "estores.interior.feature2": "Fácil instalação e manutenção",
+    "estores.interior.feature3": "Opções blackout e translúcidas",
+    "estores.cta.title": "Melhore o conforto da sua casa",
+    "estores.cta.description":
+      "Nossos estores oferecem a combinação perfeita de funcionalidade, eficiência energética e estética. Solicite um orçamento gratuito e descubra como podemos transformar seus espaços.",
+    "estores.cta.button": "Solicitar Orçamento Gratuito",
+
+    "mosquiteiras.title": "Redes Mosquiteiras",
+    "mosquiteiras.description":
+      "Proteção eficaz contra insetos sem comprometer a ventilação e a vista exterior, garantindo conforto e bem-estar para sua família.",
+    "mosquiteiras.back": "Voltar para página inicial",
+    "mosquiteiras.cta": "Pedir Orçamento",
+    "mosquiteiras.benefits.title": "Benefícios das Redes Mosquiteiras",
+    "mosquiteiras.benefits.protection.title": "Proteção Contra Insetos",
+    "mosquiteiras.benefits.protection.desc":
+      "Barreira eficaz contra mosquitos, moscas, abelhas e outros insetos, mantendo sua casa livre de pragas e reduzindo o risco de doenças transmitidas por vetores.",
+    "mosquiteiras.benefits.ventilation.title": "Ventilação Natural",
+    "mosquiteiras.benefits.ventilation.desc":
+      "Permite a circulação de ar fresco enquanto mantém os insetos do lado de fora, reduzindo a necessidade de ar condicionado e melhorando a qualidade do ar interior.",
+    "mosquiteiras.benefits.visibility.title": "Visibilidade Preservada",
+    "mosquiteiras.benefits.visibility.desc":
+      "Malha fina e discreta que não compromete a vista para o exterior, mantendo a conexão visual com o ambiente externo e a entrada de luz natural.",
+    "mosquiteiras.categories.title": "Nossas Categorias",
+    "mosquiteiras.categories.description":
+      "Oferecemos diferentes tipos de redes mosquiteiras para atender às suas necessidades específicas, combinando funcionalidade, durabilidade e estética.",
+    "mosquiteiras.fixed.title": "Rede Fixa",
+    "mosquiteiras.fixed.desc":
+      "Solução permanente para janelas que não precisam ser abertas frequentemente, oferecendo proteção contínua contra insetos com instalação simples.",
+    "mosquiteiras.fixed.feature1": "Instalação simples e discreta",
+    "mosquiteiras.fixed.feature2": "Máxima proteção contra insetos",
+    "mosquiteiras.fixed.feature3": "Solução econômica e durável",
+    "mosquiteiras.movable.title": "Rede Fixa Móvel",
+    "mosquiteiras.movable.desc":
+      "Combina a proteção de uma rede fixa com a praticidade de poder removê-la quando necessário, ideal para limpeza ou acesso à janela.",
+    "mosquiteiras.movable.feature1": "Fácil remoção para limpeza",
+    "mosquiteiras.movable.feature2": "Sistema de encaixe seguro",
+    "mosquiteiras.movable.feature3": "Ideal para janelas de uso ocasional",
+    "mosquiteiras.pleated.title": "Rede Plissada",
+    "mosquiteiras.pleated.desc":
+      "Design moderno que se dobra como um acordeão, economizando espaço e oferecendo operação suave e silenciosa, ideal para portas e grandes vãos.",
+    "mosquiteiras.pleated.feature1": "Design compacto e elegante",
+    "mosquiteiras.pleated.feature2": "Operação suave e silenciosa",
+    "mosquiteiras.pleated.feature3": "Ideal para portas e grandes vãos",
+    "mosquiteiras.more.info": "Mais Informações",
+    "mosquiteiras.cta.title": "Proteja sua casa contra insetos",
+    "mosquiteiras.cta.description":
+      "Nossas redes mosquiteiras são a solução ideal para manter sua casa ventilada e livre de insetos. Solicite um orçamento gratuito e desfrute do conforto que você merece.",
+    "mosquiteiras.cta.button": "Solicitar Orçamento Gratuito",
+
+    "portadas.back": "Voltar para página inicial",
+    "portadas.title": "Portadas",
+    "portadas.description":
+      "Soluções elegantes que oferecem segurança adicional e controle de luminosidade, valorizando a estética da sua fachada enquanto protegem seu interior.",
+    "portadas.cta": "Pedir Orçamento",
+    "portadas.benefits.title": "Benefícios das Portadas",
+    "portadas.benefits.security.title": "Segurança Reforçada",
+    "portadas.benefits.security.desc":
+      "Barreira adicional contra intrusões, aumentando a segurança de sua casa ou negócio com sistemas de trancamento robustos e materiais resistentes a impactos.",
+    "portadas.benefits.light.title": "Controle de Luz",
+    "portadas.benefits.light.desc":
+      "Regulagem precisa da entrada de luz natural, protegendo móveis e decoração contra os raios solares e criando ambientes mais confortáveis em dias de forte insolação.",
+    "portadas.benefits.aesthetic.title": "Valor Estético",
+    "portadas.benefits.aesthetic.desc":
+      "Valorização da fachada com designs elegantes que complementam a arquitetura de sua casa, disponíveis em diversos estilos, cores e acabamentos para se adequar a qualquer projeto.",
+    "portadas.features.title": "Características Premium",
+    "portadas.features.description":
+      "Nossas portadas são fabricadas com os melhores materiais e tecnologias disponíveis, garantindo durabilidade, funcionalidade e beleza para sua residência ou negócio.",
+    "portadas.features.image.alt": "Portadas de alta qualidade",
+    "portadas.features.materials.title": "Materiais de Alta Qualidade",
+    "portadas.features.materials.desc":
+      "Fabricadas com alumínio de alta resistência ou PVC reforçado, oferecendo durabilidade excepcional e resistência às intempéries.",
+    "portadas.features.locking.title": "Sistemas de Trancamento Avançados",
+    "portadas.features.locking.desc":
+      "Equipadas com fechaduras e travas de segurança que oferecem proteção adicional contra tentativas de arrombamento.",
+    "portadas.features.customization.title": "Personalização Completa",
+    "portadas.features.customization.desc":
+      "Disponíveis em diversos estilos, cores e acabamentos para se adequar perfeitamente à estética da sua casa e às suas necessidades específicas.",
+    "portadas.features.insulation.title": "Isolamento Adicional",
+    "portadas.features.insulation.desc":
+      "Proporcionam uma camada extra de isolamento térmico e acústico, contribuindo para o conforto interior e a eficiência energética da sua casa.",
+    "portadas.cta.title": "Valorize e proteja sua casa",
+    "portadas.cta.description":
+      "Nossas portadas combinam segurança, funcionalidade e beleza para transformar sua casa. Entre em contato hoje mesmo para um orçamento gratuito.",
+    "portadas.cta.button": "Solicitar Orçamento Gratuito",
+
+    "vedaluz.back": "Voltar para página inicial",
+    "vedaluz.title": "Vedaluz",
+    "vedaluz.description":
+      "Sistemas avançados de vedação que garantem o máximo de eficiência energética e conforto para sua casa ou escritório, com tecnologia de ponta para isolamento superior.",
+    "vedaluz.cta": "Pedir Orçamento",
+    "vedaluz.benefits.title": "Benefícios dos Sistemas Vedaluz",
+    "vedaluz.benefits.energy.title": "Eficiência Energética",
+    "vedaluz.benefits.energy.desc":
+      "Redução significativa nos custos de aquecimento e refrigeração graças ao excelente isolamento térmico, contribuindo para uma economia de até 40% na conta de energia.",
+    "vedaluz.benefits.acoustic.title": "Conforto Acústico",
+    "vedaluz.benefits.acoustic.desc":
+      "Diminuição drástica dos ruídos externos, criando ambientes mais tranquilos e agradáveis com redução de até 45dB, ideal para áreas urbanas ou próximas a vias movimentadas.",
+    "vedaluz.benefits.sealing.title": "Vedação Total",
+    "vedaluz.benefits.sealing.desc":
+      "Proteção completa contra infiltrações de água, vento e poeira, garantindo ambientes mais limpos e saudáveis, além de prolongar a vida útil da estrutura da edificação.",
+    "vedaluz.panels.title": "Tipos de Painéis",
+    "vedaluz.panels.description":
+      "Oferecemos dois tipos de painéis Vedaluz para atender às suas necessidades específicas de estilo e funcionalidade.",
+    "vedaluz.panels.smooth.title": "Painel Liso",
+    "vedaluz.panels.smooth.desc":
+      "Design minimalista e contemporâneo com superfície lisa e uniforme, ideal para ambientes modernos e espaços que buscam uma estética clean e sofisticada.",
+    "vedaluz.panels.smooth.feature1": "Acabamento elegante e uniforme",
+    "vedaluz.panels.smooth.feature2": "Fácil limpeza e manutenção",
+    "vedaluz.panels.smooth.feature3": "Ideal para ambientes contemporâneos",
+    "vedaluz.panels.wood.title": "Painel Táboa",
+    "vedaluz.panels.wood.desc":
+      "Inspirado na textura natural da madeira, oferece um visual rústico e acolhedor, perfeito para projetos que buscam combinar eficiência com o charme tradicional.",
+    "vedaluz.panels.wood.feature1": "Textura que imita madeira natural",
+    "vedaluz.panels.wood.feature2": "Maior resistência a riscos e impactos",
+    "vedaluz.panels.wood.feature3": "Perfeito para ambientes rústicos e tradicionais",
+    "vedaluz.technology.title": "Tecnologia Avançada",
+    "vedaluz.technology.description":
+      "Os sistemas Vedaluz utilizam tecnologia de ponta para garantir o máximo desempenho em isolamento térmico e acústico, com soluções inovadoras que se adaptam às suas necessidades específicas.",
+    "vedaluz.technology.system.title": "Sistema Multicâmara",
+    "vedaluz.technology.system.desc":
+      "Perfis com múltiplas câmaras de ar que criam barreiras térmicas eficientes, reduzindo significativamente a transferência de calor entre ambientes.",
+    "vedaluz.technology.seals.title": "Vedantes de Alta Performance",
+    "vedaluz.technology.seals.desc":
+      "Materiais elastoméricos de última geração que garantem vedação perfeita mesmo após anos de uso, resistentes a variações de temperatura e radiação UV.",
+    "vedaluz.technology.thermal.title": "Ruptura de Ponte Térmica",
+    "vedaluz.technology.thermal.desc":
+      "Tecnologia que interrompe a condução de calor através dos perfis, eliminando pontes térmicas e garantindo isolamento superior em toda a estrutura.",
+    "vedaluz.technology.glass.title": "Compatibilidade com Vidros Especiais",
+    "vedaluz.technology.glass.desc":
+      "Sistemas projetados para acomodar vidros duplos e triplos com gases nobres e películas de baixa emissividade, maximizando o desempenho térmico e acústico.",
+    "vedaluz.technology.image.alt": "Tecnologia Vedaluz",
+    "vedaluz.applications.title": "Aplicações",
+    "vedaluz.applications.description":
+      "Os sistemas Vedaluz são versáteis e podem ser aplicados em diversos tipos de projetos, sempre garantindo o máximo desempenho em isolamento e eficiência energética.",
+    "vedaluz.applications.residential.title": "Residências de Alto Padrão",
+    "vedaluz.applications.residential.desc":
+      "Soluções premium para casas e apartamentos que buscam o máximo conforto térmico e acústico, com acabamento sofisticado e personalização completa.",
+    "vedaluz.applications.commercial.title": "Edifícios Comerciais",
+    "vedaluz.applications.commercial.desc":
+      "Sistemas robustos e eficientes para escritórios, lojas e hotéis, contribuindo para a redução de custos operacionais e criação de ambientes mais confortáveis.",
+    "vedaluz.applications.special.title": "Ambientes Especiais",
+    "vedaluz.applications.special.desc":
+      "Soluções específicas para hospitais, estúdios de gravação, salas de concerto e outros ambientes que exigem isolamento acústico e térmico excepcional.",
+    "vedaluz.cta.title": "Maximize o conforto e a eficiência da sua casa",
+    "vedaluz.cta.description":
+      "Nossos sistemas Vedaluz oferecem o que há de mais avançado em tecnologia de isolamento. Entre em contato hoje mesmo para um diagnóstico personalizado e orçamento gratuito.",
+    "vedaluz.cta.button": "Solicitar Orçamento Gratuito",
+    "vedaluz.more.info": "Mais Informações",
+
+    "blackout.back": "Voltar para página inicial",
+    "blackout.title": "Blackout",
+    "blackout.description":
+      "Soluções de blackout que proporcionam controle total de luminosidade, privacidade absoluta e eficiência energética para seu ambiente.",
+    "blackout.cta": "Pedir Orçamento",
+    "blackout.benefits.title": "Benefícios dos Sistemas Blackout",
+    "blackout.benefits.light.title": "Bloqueio Total de Luz",
+    "blackout.benefits.light.desc":
+      "Elimina completamente a entrada de luz externa, criando ambientes ideais para descanso, home theaters ou qualquer espaço que exija escuridão total.",
+    "blackout.benefits.privacy.title": "Privacidade Absoluta",
+    "blackout.benefits.privacy.desc":
+      "Garante total privacidade em qualquer momento do dia, protegendo seu espaço de olhares externos e criando um ambiente mais reservado e seguro.",
+    "blackout.benefits.energy.title": "Eficiência Energética",
+    "blackout.benefits.energy.desc":
+      "Contribui para o isolamento térmico, reduzindo a entrada de calor no verão e a perda de calor no inverno, resultando em economia significativa de energia.",
+    "blackout.types.title": "Tipos de Blackout",
+    "blackout.types.description":
+      "Oferecemos diferentes tipos de sistemas blackout para atender às suas necessidades específicas de controle de luz e privacidade.",
+    "blackout.types.normal.title": "Blackout Normal",
+    "blackout.types.normal.desc":
+      "Sistema tradicional de blackout com tecido especial que bloqueia completamente a passagem de luz, ideal para quartos, salas de TV e ambientes que necessitam de controle total de luminosidade.",
+    "blackout.types.normal.feature1": "Bloqueio total de luz",
+    "blackout.types.normal.feature2": "Fácil operação manual ou motorizada",
+    "blackout.types.normal.feature3": "Ampla variedade de cores e acabamentos",
+    "blackout.types.pleated.title": "Blackout Plissado",
+    "blackout.types.pleated.desc":
+      "Sistema moderno com design plissado que combina estética sofisticada com funcionalidade superior, economizando espaço e oferecendo controle preciso da luminosidade.",
+    "blackout.types.pleated.feature1": "Design compacto e elegante",
+    "blackout.types.pleated.feature2": "Operação suave e silenciosa",
+    "blackout.types.pleated.feature3": "Ideal para janelas de formatos especiais",
+    "blackout.features.title": "Características Premium",
+    "blackout.features.description":
+      "Nossos sistemas blackout são fabricados com materiais de alta qualidade e tecnologia avançada, garantindo desempenho superior e durabilidade excepcional.",
+    "blackout.features.fabrics.title": "Tecidos Especiais",
+    "blackout.features.fabrics.desc":
+      "Utilizamos tecidos com camadas múltiplas que garantem 100% de bloqueio de luz, além de propriedades térmicas e acústicas avançadas.",
+    "blackout.features.operation.title": "Sistemas de Operação",
+    "blackout.features.operation.desc":
+      "Disponíveis com operação manual tradicional ou sistemas motorizados com controle remoto e integração com automação residencial.",
+    "blackout.features.customization.title": "Personalização Completa",
+    "blackout.features.customization.desc":
+      "Ampla variedade de cores, padrões e acabamentos para combinar perfeitamente com sua decoração e estilo de ambiente.",
+    "blackout.features.installation.title": "Instalação Profissional",
+    "blackout.features.installation.desc":
+      "Equipe especializada que garante instalação perfeita, com acabamento impecável e funcionamento adequado do sistema.",
+    "blackout.features.image.alt": "Características dos Blackouts",
+    "blackout.cta.title": "Controle total de luz e privacidade",
+    "blackout.cta.description":
+      "Nossos sistemas blackout oferecem a solução perfeita para quem busca controle absoluto de luminosidade e privacidade. Solicite um orçamento gratuito e transforme seu ambiente.",
+    "blackout.cta.button": "Solicitar Orçamento Gratuito",
+    "blackout.more.info": "Mais Informações"
+  }
