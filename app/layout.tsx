@@ -11,8 +11,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: {
-    default: "WINDAYPVC - Janelas e Portas PVC de Alta Qualidade",
-    template: "%s | WINDAYPVC",
+    default: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
+    template: "%s | Windaypvc",
   },
   description:
     "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
@@ -27,9 +27,9 @@ export const metadata = {
     "isolamento térmico",
     "isolamento acústico",
   ],
-  authors: [{ name: "WINDAYPVC" }],
-  creator: "WINDAYPVC",
-  publisher: "WINDAYPVC",
+  authors: [{ name: "Windaypvc" }],
+  creator: "Windaypvc",
+  publisher: "Windaypvc",
   formatDetection: {
     email: false,
     address: false,
@@ -45,17 +45,17 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "WINDAYPVC - Janelas e Portas PVC de Alta Qualidade",
+    title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
     description:
       "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
     url: "https://windaypvc.pt",
-    siteName: "WINDAYPVC",
+    siteName: "Windaypvc",
     images: [
       {
         url: "/winday.jpg",
         width: 1200,
         height: 630,
-        alt: "WINDAYPVC - Janelas e Portas PVC de Alta Qualidade",
+        alt: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
       },
     ],
     locale: "pt_PT",
@@ -63,7 +63,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WINDAYPVC - Janelas e Portas PVC de Alta Qualidade",
+    title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
     description:
       "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
     images: ["/winday.jpg"],
@@ -102,7 +102,6 @@ export const metadata = {
       },
     ],
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -132,7 +131,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "WINDAYPVC",
+              name: "Windaypvc",
               url: "https://windaypvc.pt",
               logo: "https://windaypvc.pt/logo512.png",
               sameAs: [
