@@ -64,8 +64,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-[#493F0B]">{t("contact.email")}</h3>
                     <p className="text-[#493F0B]/80">
-                      <a href="mailto:geralwinday@gmail.com" className="hover:underline">
-                        geralwinday@gmail.com
+                      <a href="mailto:geral@windaypvc.pt" className="hover:underline">
+                        geral@windaypvc.pt
                       </a>
                     </p>
                   </div>

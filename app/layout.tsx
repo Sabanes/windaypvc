@@ -144,7 +144,7 @@ export default function RootLayout({
                 contactType: "customer service",
                 availableLanguage: ["Portuguese", "English", "Ukrainian"],
               },
-              email: "geralwinday@gmail.com",
+              email: "geral@windaypvc.pt",
               description:
                 "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
             }),
