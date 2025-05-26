@@ -82,7 +82,7 @@ export function ProductsSection() {
             id="portadas"
             title={t("product.portadas")}
             description={t("products.portadas.desc")}
-            imageSrc="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/k9lkjk5nyhmef92erfem"
+            imageSrc="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/gbnhjcm1fwiwow7ps06q"
             imageAlt="Portadas"
             pageUrl="/produtos/portadas"
           />
@@ -105,6 +105,14 @@ export function ProductsSection() {
             imageSrc="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/lewvjri8ky0wpaapye79"
             imageAlt="Sistemas Blackout"
             pageUrl="/produtos/blackout"
+          />
+          <ProductCard
+            id="guardas"
+            title={t("product.guardas")}
+            description={t("products.guardas.desc")}
+            imageSrc="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/sgpymxzvpqzmjo7t2x5n"
+            imageAlt="Guardas e guarda-corpo"
+            pageUrl="/produtos/guardas"
           />
         </div>
       </div>

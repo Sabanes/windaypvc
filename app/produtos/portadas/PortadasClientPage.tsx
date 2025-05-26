@@ -16,7 +16,7 @@ export default function PortadasClientPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/k9lkjk5nyhmef92erfem"
+            src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/gbnhjcm1fwiwow7ps06q"
             alt={t("portadas.title")}
             fill
             className="object-cover"
@@ -82,7 +82,7 @@ export default function PortadasClientPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/k9lkjk5nyhmef92erfem"
+                src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/jnmart8u2l922gmh9lbu"
                 alt={t("portadas.features.image.alt")}
                 fill
                 className="object-cover rounded-lg"

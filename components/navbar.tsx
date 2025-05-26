@@ -24,6 +24,7 @@ export function Navbar() {
     { name: t("product.portadas"), path: "portadas" },
     { name: t("product.vedaluz"), path: "vedaluz" },
     { name: t("product.blackout"), path: "blackout" },
+    { name: t("product.guardas"), path: "guardas" },
   ]
 
   // Navigation items
@@ -32,7 +33,6 @@ export function Navbar() {
     { name: t("nav.products"), sectionId: "produtos", hasDropdown: true },
     { name: t("nav.services"), sectionId: "servicos" },
     { name: t("nav.about"), sectionId: "sobre-nos" },
-    { name: t("nav.benefits"), sectionId: "vantagens" },
   ]
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

@@ -427,5 +427,70 @@
 
 "pvc.models.e170.title": "E170",
 "pvc.models.e170.description": "Sistema de correr elevável robusto para grandes vãos.",
-"pvc.models.e170.details": "• Máximo envidraçamento: 40 mm\n\n• Possibilidades de abertura:\nCorrer com 1, 2 ou 4 folhas\n\n• Secções:\nAro fixo: 170 mm\nFolha: 70 mm\n\n• Dimensões máximas:\nL = 3000 mm | A = 2800 mm\n\n• Peso máximo:\nSTAC: 300 kg\nMACO: 320 kg\n\n• Acabamentos:\nBranco, Cores, Bi-color, Imitação madeira, Metálico"
-  }
+"pvc.models.e170.details": "• Máximo envidraçamento: 40 mm\n\n• Possibilidades de abertura:\nCorrer com 1, 2 ou 4 folhas\n\n• Secções:\nAro fixo: 170 mm\nFolha: 70 mm\n\n• Dimensões máximas:\nL = 3000 mm | A = 2800 mm\n\n• Peso máximo:\nSTAC: 300 kg\nMACO: 320 kg\n\n• Acabamentos:\nBranco, Cores, Bi-color, Imitação madeira, Metálico",
+
+    "product.guardas": "Guardas",
+
+  "guardas.back": "Voltar para Início",
+  "guardas.title": "Guardas",
+  "guardas.description": "Proteção elegante e segura para varandas e escadas, combinando segurança, estética e durabilidade.",
+  "guardas.cta": "Pedir Orçamento",
+  "guardas.more.info": "Mais Informações",
+  "products.guardas.desc": "Proteção elegante e segura para varandas e escadas, combinando segurança, estética e durabilidade.",
+
+  "guardas.benefits.title": "Vantagens das Nossas Guardas",
+  "guardas.benefits.safety.title": "Segurança",
+  "guardas.benefits.safety.desc": "Proteção robusta que cumpre todas as normas de segurança, garantindo tranquilidade para toda a família.",
+  "guardas.benefits.aesthetics.title": "Estética",
+  "guardas.benefits.aesthetics.desc": "Design elegante que valoriza a arquitetura do seu espaço, disponível em diversos acabamentos.",
+  "guardas.benefits.customization.title": "Personalização",
+  "guardas.benefits.customization.desc": "Soluções adaptáveis às suas necessidades específicas, com várias opções de materiais e acabamentos.",
+
+
+  "guardas.types.title": "Nossos Modelos de Guardas",
+  "guardas.types.description": "Oferecemos uma ampla gama de modelos para atender às suas necessidades específicas de segurança e estética.",
+
+
+  "guardas.types.juliet.title": "Juliet Balcony",
+  "guardas.types.juliet.desc": "Guarda-corpo minimalista ideal para janelas de sacada, proporcionando segurança sem comprometer a vista.",
+  "guardas.types.juliet.feature1": "Design elegante e discreto",
+  "guardas.types.juliet.feature2": "Instalação simples e rápida",
+  "guardas.types.juliet.feature3": "Compatível com diversos tipos de janelas",
+
+  "guardas.types.crystal.title": "View Crystal",
+  "guardas.types.crystal.desc": "Guarda-corpo em vidro temperado que oferece máxima visibilidade e um aspecto moderno e sofisticado.",
+  "guardas.types.crystal.feature1": "Vidro temperado de alta resistência",
+  "guardas.types.crystal.feature2": "Visibilidade total para o exterior",
+  "guardas.types.crystal.feature3": "Acabamentos em alumínio de alta qualidade",
+
+  "guardas.types.ac10_15c.desc": "Modelo com design contemporâneo que combina alumínio e vidro para um visual elegante e seguro.",
+  "guardas.types.ac10_15c.feature1": "Perfis de alumínio resistentes",
+  "guardas.types.ac10_15c.feature2": "Painéis de vidro temperado",
+  "guardas.types.ac10_15c.feature3": "Fácil manutenção e durabilidade",
+
+  "guardas.types.ac10_15b.desc": "Guarda-corpo com design versátil que se adapta a diferentes estilos arquitetônicos.",
+  "guardas.types.ac10_15b.feature1": "Estrutura robusta em alumínio",
+  "guardas.types.ac10_15b.feature2": "Opções de acabamento personalizáveis",
+  "guardas.types.ac10_15b.feature3": "Resistente a condições climáticas adversas",
+
+  "guardas.types.ac10_15a.desc": "Modelo clássico que oferece segurança e elegância para varandas e terraços.",
+  "guardas.types.ac10_15a.feature1": "Design atemporal e elegante",
+  "guardas.types.ac10_15a.feature2": "Alta resistência estrutural",
+  "guardas.types.ac10_15a.feature3": "Múltiplas opções de cores e acabamentos",
+
+  "guardas.types.ac10_18.desc": "Guarda-corpo robusto ideal para áreas de grande circulação, combinando segurança e estética.",
+  "guardas.types.ac10_18.feature1": "Estrutura reforçada para maior segurança",
+  "guardas.types.ac10_18.feature2": "Design moderno e funcional",
+  "guardas.types.ac10_18.feature3": "Instalação versátil em diferentes superfícies",
+
+
+  "guardas.types.ac10_18a.desc": "Modelo premium com acabamentos sofisticados para projetos que exigem exclusividade.",
+  "guardas.types.ac10_18a.feature1": "Acabamentos premium de alta qualidade",
+  "guardas.types.ac10_18a.feature2": "Design exclusivo e diferenciado",
+  "guardas.types.ac10_18a.feature3": "Máxima durabilidade e resistência",
+
+
+  "guardas.cta.title": "Proteja Seu Espaço com Nossas Guardas",
+  "guardas.cta.description": "Entre em contato conosco hoje para obter mais informações sobre nossas soluções de guardas e guarda-corpo.",
+  "guardas.cta.button": "Solicitar Orçamento Gratuito"
+}

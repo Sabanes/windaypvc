@@ -465,5 +465,67 @@
 
 "pvc.models.e170.title": "E170",
 "pvc.models.e170.description": "Lift & slide system for large dimensions and high performance.",
-"pvc.models.e170.details": "• Maximum glazing: 40 mm\n\n• Opening types:\nSliding 1, 2 or 4 sashes\n\n• Profiles:\nFrame: 170 mm\nSash: 70 mm\n\n• Max dimensions:\nW = 3000 mm | H = 2800 mm\n\n• Max weight:\nSTAC: 300 kg\nMACO: 320 kg\n\n• Finishes:\nWhite, Colors, Bi-color, Wood effect, Metallic"
+"pvc.models.e170.details": "• Maximum glazing: 40 mm\n\n• Opening types:\nSliding 1, 2 or 4 sashes\n\n• Profiles:\nFrame: 170 mm\nSash: 70 mm\n\n• Max dimensions:\nW = 3000 mm | H = 2800 mm\n\n• Max weight:\nSTAC: 300 kg\nMACO: 320 kg\n\n• Finishes:\nWhite, Colors, Bi-color, Wood effect, Metallic",
+"product.guardas": "Railings",
+  
+  "guardas.back": "Back to Home",
+  "guardas.title": "Railings and Balustrades",
+  "guardas.description": "Elegant and safe protection for balconies and stairs, combining safety, aesthetics, and durability.",
+  "guardas.cta": "Request a Quote",
+  "guardas.more.info": "More Information",
+  "products.guardas.desc": "Elegant and safe protection for balconies and stairs, combining safety, aesthetics, and durability.",
+
+  "guardas.benefits.title": "Benefits of Our Railings",
+  "guardas.benefits.safety.title": "Safety",
+  "guardas.benefits.safety.desc": "Robust protection that meets all safety standards, ensuring peace of mind for the whole family.",
+  "guardas.benefits.aesthetics.title": "Aesthetics",
+  "guardas.benefits.aesthetics.desc": "Elegant design that enhances the architecture of your space, available in various finishes.",
+  "guardas.benefits.customization.title": "Customization",
+  "guardas.benefits.customization.desc": "Adaptable solutions to your specific needs, with various material and finish options.",
+
+  "guardas.types.title": "Our Railing Models",
+  "guardas.types.description": "We offer a wide range of models to meet your specific safety and aesthetic needs.",
+
+  "guardas.types.juliet.title": "Juliet Balcony",
+  "guardas.types.juliet.desc": "Minimalist railing ideal for balcony windows, providing safety without compromising the view.",
+  "guardas.types.juliet.feature1": "Elegant and discreet design",
+  "guardas.types.juliet.feature2": "Simple and quick installation",
+  "guardas.types.juliet.feature3": "Compatible with various window types",
+
+  "guardas.types.crystal.title": "View Crystal",
+  "guardas.types.crystal.desc": "Tempered glass railing that offers maximum visibility and a modern, sophisticated look.",
+  "guardas.types.crystal.feature1": "High-strength tempered glass",
+  "guardas.types.crystal.feature2": "Total visibility to the exterior",
+  "guardas.types.crystal.feature3": "High-quality aluminum finishes",
+
+  "guardas.types.ac10_15c.desc": "Model with contemporary design that combines aluminum and glass for an elegant and safe look.",
+  "guardas.types.ac10_15c.feature1": "Resistant aluminum profiles",
+  "guardas.types.ac10_15c.feature2": "Tempered glass panels",
+  "guardas.types.ac10_15c.feature3": "Easy maintenance and durability",
+
+  "guardas.types.ac10_15b.desc": "Railing with versatile design that adapts to different architectural styles.",
+  "guardas.types.ac10_15b.feature1": "Robust aluminum structure",
+  "guardas.types.ac10_15b.feature2": "Customizable finish options",
+  "guardas.types.ac10_15b.feature3": "Resistant to adverse weather conditions",
+
+  "guardas.types.ac10_15a.desc": "Classic model that offers safety and elegance for balconies and terraces.",
+  "guardas.types.ac10_15a.feature1": "Timeless and elegant design",
+  "guardas.types.ac10_15a.feature2": "High structural resistance",
+  "guardas.types.ac10_15a.feature3": "Multiple color and finish options",
+
+  "guardas.types.ac10_18.desc": "Robust railing ideal for high-traffic areas, combining safety and aesthetics.",
+  "guardas.types.ac10_18.feature1": "Reinforced structure for greater safety",
+  "guardas.types.ac10_18.feature2": "Modern and functional design",
+  "guardas.types.ac10_18.feature3": "Versatile installation on different surfaces",
+
+  "guardas.types.ac10_18a.desc": "Premium model with sophisticated finishes for projects that require exclusivity.",
+  "guardas.types.ac10_18a.feature1": "High-quality premium finishes",
+  "guardas.types.ac10_18a.feature2": "Exclusive and differentiated design",
+  "guardas.types.ac10_18a.feature3": "Maximum durability and resistance",
+
+
+  "guardas.cta.title": "Protect Your Space with Our Railings",
+  "guardas.cta.description": "Contact us today to learn more about our railing and balustrade solutions.",
+  "guardas.cta.button": "Request a Free Quote"
+
   }
