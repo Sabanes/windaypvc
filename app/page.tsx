@@ -1,5 +1,4 @@
-"use client"
-
+import type { Metadata } from 'next'
 import { HeroSection } from "@/components/sections/hero-section"
 import { ProductsSection } from "@/components/sections/products-section"
 import { PartnersSection } from "@/components/sections/partners-section"
@@ -7,40 +6,44 @@ import { AboutSection } from "@/components/sections/about-section"
 import { ServicesSection } from "@/components/sections/services-section"
 import { BenefitsSection } from "@/components/sections/benefits-section"
 import { QuoteSection } from "@/components/sections/quote-section"
-import { useEffect } from "react"
-import { useSearchParams } from "next/navigation"
+import { ScrollHandler } from "@/components/sceoll-handler" // We'll create this
+
+// Export metadata for the home page
+export const metadata: Metadata = {
+  title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
+  description: "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
+  openGraph: {
+    title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
+    description: "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
+    url: "https://windaypvc.pt",
+    siteName: "Windaypvc",
+    images: [
+      {
+        url: "https://windaypvc.pt/winday.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
+      },
+    ],
+    locale: "pt_PT",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
+    description: "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
+    images: ["https://windaypvc.pt/winday.jpg"],
+    creator: "@windaypvc",
+  },
+  alternates: {
+    canonical: "https://windaypvc.pt",
+  },
+}
 
 export default function Home() {
-  const searchParams = useSearchParams()
-
-  // Handle scrolling to sections when navigating from other pages
-  useEffect(() => {
-    // Check if there's a hash in the URL
-    const hash = window.location.hash
-    if (hash) {
-      // Remove the # character
-      const sectionId = hash.substring(1)
-
-      // Wait a bit for the page to fully render
-      setTimeout(() => {
-        const element = document.getElementById(sectionId)
-        if (element) {
-          // Get the element's position and scroll to it
-          const rect = element.getBoundingClientRect()
-          const offset = 80
-          const absoluteTop = rect.top + window.pageYOffset - offset
-
-          window.scrollTo({
-            top: absoluteTop,
-            behavior: "smooth",
-          })
-        }
-      }, 300)
-    }
-  }, [searchParams])
-
   return (
     <div className="bg-[#d3d3d3] min-h-screen">
+      <ScrollHandler />
       <HeroSection />
       <ProductsSection />
       <PartnersSection />

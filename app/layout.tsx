@@ -10,16 +10,16 @@ import { LanguageProvider } from "@/contexts/language-context"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
+  metadataBase: new URL("https://windaypvc.pt"),
   title: {
     default: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
     template: "%s | Windaypvc",
   },
-  description:
-    "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
+  description: "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
   keywords: [
     "janelas pvc",
     "portas pvc",
-    "estores",
+    "estores", 
     "mosquiteiras",
     "portadas",
     "vedaluz",
@@ -35,38 +35,36 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://windaypvc.pt"),
   alternates: {
-    canonical: "/",
+    canonical: "https://windaypvc.pt", // Changed from "/"
     languages: {
-      "pt-PT": "/",
-      "en-US": "/en",
-      "uk-UA": "/uk",
+      "pt-PT": "https://windaypvc.pt",
+      "en-US": "https://windaypvc.pt/en",
+      "uk-UA": "https://windaypvc.pt/uk",
     },
   },
-openGraph: {
-  title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
-  description:
-    "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
-  url: "https://windaypvc.pt",
-  siteName: "Windaypvc",
-  images: [
-    {
-      url: "https://windaypvc.pt/winday.jpg", // ✅ Use absolute URL
-      width: 1200,
-      height: 630,
-      alt: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
-    },
-  ],
-  locale: "pt_PT",
-  type: "website",
-},
+  openGraph: {
+    title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
+    description: "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
+    url: "https://windaypvc.pt",
+    siteName: "Windaypvc",
+    images: [
+      {
+        url: "/winday.jpg", // This will resolve to https://windaypvc.pt/winday.jpg
+        width: 1200,
+        height: 630,
+        alt: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
+      },
+    ],
+    locale: "pt_PT",
+    type: "website",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
-    description:
-      "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
-  images: ["https://windaypvc.pt/winday.jpg"], // ✅ Use absolute URL here too    creator: "@windaypvc",
+    description: "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
+    images: ["/winday.jpg"], // This will resolve to https://windaypvc.pt/winday.jpg
+    creator: "@windaypvc",
   },
   viewport: {
     width: "device-width",
@@ -74,7 +72,7 @@ openGraph: {
     maximumScale: 5,
   },
   verification: {
-    google: "google-site-verification-code", // Replace with actual verification code when available
+    google: "google-site-verification-code",
   },
   robots: {
     index: true,
@@ -89,11 +87,11 @@ openGraph: {
   },
   icons: {
     icon: [
-      { url: "./logo192.png", sizes: "192x192", type: "image/png" },
+      { url: "/logo192.png", sizes: "192x192", type: "image/png" },
       { url: "/logo512.png", sizes: "512x512", type: "image/png" },
     ],
-    shortcut: ["./logo192.png"],
-    apple: [{ url: "./apple-touch-icon.png" }],
+    shortcut: ["/logo192.png"],
+    apple: [{ url: "/apple-touch-icon.png" }],
     other: [
       {
         rel: "manifest",
