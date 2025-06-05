@@ -44,30 +44,29 @@ export const metadata = {
       "uk-UA": "/uk",
     },
   },
-  openGraph: {
-    title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
-    description:
-      "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
-    url: "https://windaypvc.pt",
-    siteName: "Windaypvc",
-    images: [
-      {
-        url: "/winday.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
-      },
-    ],
-    locale: "pt_PT",
-    type: "website",
-  },
+openGraph: {
+  title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
+  description:
+    "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
+  url: "https://windaypvc.pt",
+  siteName: "Windaypvc",
+  images: [
+    {
+      url: "https://windaypvc.pt/winday.jpg", // ✅ Use absolute URL
+      width: 1200,
+      height: 630,
+      alt: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
+    },
+  ],
+  locale: "pt_PT",
+  type: "website",
+},
   twitter: {
     card: "summary_large_image",
     title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
     description:
       "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
-    images: ["/winday.jpg"],
-    creator: "@windaypvc",
+  images: ["https://windaypvc.pt/winday.jpg"], // ✅ Use absolute URL here too    creator: "@windaypvc",
   },
   viewport: {
     width: "device-width",
@@ -90,11 +89,11 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/logo192.png", sizes: "192x192", type: "image/png" },
+      { url: "./logo192.png", sizes: "192x192", type: "image/png" },
       { url: "/logo512.png", sizes: "512x512", type: "image/png" },
     ],
-    shortcut: ["/logo192.png"],
-    apple: [{ url: "/apple-touch-icon.png" }],
+    shortcut: ["./logo192.png"],
+    apple: [{ url: "./apple-touch-icon.png" }],
     other: [
       {
         rel: "manifest",
