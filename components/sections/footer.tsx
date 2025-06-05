@@ -28,10 +28,18 @@ export function Footer() {
 
               {/* Contact Information */}
               <div className="mt-6 space-y-2">
+                <div className="flex  items-center gap-2">
+                  <Phone className="h-4 w-4 text-white/70" />
+                                        <a href="tel:+351932825464" className="hover:underline">
+                        +351 932-825-464 🇷🇺 🇺🇦
+                      </a>
+                      <br />
+                      
+                </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-white/70" />
-                  <a href="tel:+351932825464" className="text-white/70 hover:text-white transition-colors">
-                    +351 932-825-464
+                  <a href="tel:+351926877702" className="hover:underline">
+                    +351 926 877 702 🇵🇹
                   </a>
                 </div>
                 <div className="flex items-center gap-2">

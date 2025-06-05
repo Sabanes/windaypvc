@@ -3,16 +3,24 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowLeft, Check, Shield, Eye, Ruler } from "lucide-react"
-import AC1015A from "./AC10-15A.webp"
-import AC1015B from "./AC10-15B.webp"
-import AC1015C from "./AC10-15C.webp"
-import AC1018 from "./AC10-18.webp"
-import AC1018A from "./AC10-18A.webp"
+import { ArrowLeft, Check, Shield, Eye, Ruler, Download, ChevronDown, ChevronUp } from "lucide-react"
+import { useState } from "react"
+import juliet from "./juliet.png"
+import crystal from "./view-crystal.webp"
+import AC1015A from "./AC10-15A.png-DE-768.webp"
+import AC1015B from "./ac10-15b-1-768x389.webp"
+import AC1015C from "./ac10-15C-DET-768x338.webp"
+import AC18 from "./ac18-768x458.webp"
+import AC18A from "./ac18a-1-768x326.webp"
 import { useLanguage } from "@/contexts/language-context"
 
 export default function GuardasClientPage() {
   const { t } = useLanguage()
+  const [expandedProduct, setExpandedProduct] = useState<string | null>(null)
+
+  const toggleProduct = (productId: string) => {
+    setExpandedProduct(expandedProduct === productId ? null : productId)
+  }
 
   return (
     <div className="bg-[#d3d3d3] min-h-screen">
@@ -38,12 +46,13 @@ export default function GuardasClientPage() {
           </Link>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">{t("guardas.title")}</h1>
           <p className="text-white/90 text-xl max-w-2xl">{t("guardas.description")}</p>
-          <div className="mt-8">
+          <div className="mt-8 flex gap-4">
             <Link href="/contacto">
               <Button className="bg-[#493F0B] hover:bg-white text-white hover:text-[#493F0B] border border-white hover:border-[#493F0B] px-6 py-2">
                 {t("guardas.cta")}
               </Button>
             </Link>
+
           </div>
         </div>
       </section>
@@ -82,25 +91,85 @@ export default function GuardasClientPage() {
       </section>
 
       {/* Featured Products Section */}
-      <section className="py-16 bg-white">
+    <section className="py-16 bg-white">
         <div className="container mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold text-[#493F0B] mb-4 text-center">{t("guardas.types.title")}</h2>
           <p className="text-[#493F0B]/80 text-center max-w-3xl mx-auto mb-16">{t("guardas.types.description")}</p>
 
-          {/* First Featured Product - Juliet Balcony (Image Left, Text Right) */}
+          {/* First Featured Product - Juliet Balcony */}
           <div className="mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-96 rounded-lg overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/sgpymxzvpqzmjo7t2x5n"
-                  alt={t("guardas.types.juliet.title")}
+                  src="https://smartwin.pt/wp-content/uploads/2024/06/2522.superpuesta2-1024x602.jpg"
+                  alt="Juliet Balcony"
                   fill
                   className="object-cover"
                 />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-[#493F0B] mb-4">{t("guardas.types.juliet.title")}</h3>
-                <p className="text-[#493F0B]/80 mb-6 text-lg">{t("guardas.types.juliet.desc")}</p>
+                <p className="text-[#493F0B]/80 mb-6 text-lg">
+                  {t("guardas.types.juliet.desc")}
+                </p>
+
+                {/* Enhanced Specifications Accordion */}
+                <div className="bg-[#d3d3d3]/20 rounded-lg p-4 mb-6">
+                  <button 
+                    onClick={() => toggleProduct('juliet')}
+                    className="w-full flex justify-between items-center text-left"
+                  >
+                    <span className="font-semibold text-[#493F0B]">
+                      {t("guardas.specifications.technical")}
+                    </span>
+                    {expandedProduct === 'juliet' ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                  </button>
+                  
+                  {expandedProduct === 'juliet' && (
+                    <div className="mt-4 space-y-4">
+                      {/* Technical Specifications */}
+                      <div className="space-y-2 text-sm text-[#493F0B]/80">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                          <div>
+                            <p><strong>{t("guardas.specifications.glazing_capacity")}:</strong></p>
+                            <p className="ml-2">{t("guardas.specifications.double_glass")}</p>
+                          </div>
+                          <div>
+                            <p><strong>{t("guardas.specifications.max_dimensions")}:</strong></p>
+                            <p className="ml-2">H: 1200 mm / W: 1800 mm</p>
+                          </div>
+                        </div>
+                        <p><strong>{t("guardas.specifications.finishes")}:</strong> {t("guardas.specifications.lacquered_anodized")}</p>
+                        <p><strong>{t("guardas.specifications.recommendation")}:</strong> {t("guardas.specifications.tempered_recommendation")}</p>
+                      </div>
+                      
+                      {/* Technical Drawing Section */}
+                      <div className="border-t pt-4">
+                        <h4 className="font-semibold text-[#493F0B] mb-3 flex items-center">
+                          
+                        </h4>
+                        <div className="bg-white border-2 border-dashed border-[#493F0B]/20 rounded-lg p-4">
+                          <div className="relative h-48 bg-gray-50 rounded">
+                            <Image 
+                              src={juliet} 
+                              alt="Juliet Balcony Technical Drawing"
+                              fill
+                              className="object-contain p-2"
+                      
+                            />
+                            <div className="absolute inset-0 hidden items-center justify-center text-[#493F0B]/60 text-sm bg-gray-50 rounded">
+                              <div className="text-center">
+                                
+                              </div>
+                            </div>
+                          </div>  
+                        </div>
+                        
+                      </div>
+                    </div>
+                  )}
+                </div>
+
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-[#493F0B] mr-3 mt-0.5" />
@@ -124,12 +193,76 @@ export default function GuardasClientPage() {
             </div>
           </div>
 
-          {/* Second Featured Product - View Crystal (Image Right, Text Left) */}
+          {/* Second Featured Product - View Crystal */}
           <div className="mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h3 className="text-2xl font-bold text-[#493F0B] mb-4">{t("guardas.types.crystal.title")}</h3>
-                <p className="text-[#493F0B]/80 mb-6 text-lg">{t("guardas.types.crystal.desc")}</p>
+                <p className="text-[#493F0B]/80 mb-6 text-lg">
+                  {t("guardas.types.crystal.desc")}
+                </p>
+
+                {/* Enhanced Specifications Accordion */}
+                <div className="bg-[#d3d3d3]/20 rounded-lg p-4 mb-6">
+                  <button 
+                    onClick={() => toggleProduct('crystal')}
+                    className="w-full flex justify-between items-center text-left"
+                  >
+                    <span className="font-semibold text-[#493F0B]">
+                      {t("guardas.specifications.technical")}
+                    </span>
+                    {expandedProduct === 'crystal' ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
+                  </button>
+                  
+                  {expandedProduct === 'crystal' && (
+                    <div className="mt-4 space-y-4">
+                      {/* Technical Specifications */}
+                      <div className="space-y-2 text-sm text-[#493F0B]/80">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                          <div>
+                            <p><strong>{t("guardas.specifications.glazing_capacity")}:</strong></p>
+                            <p className="ml-2">{t("guardas.specifications.double_glass")}</p>
+                          </div>
+                          <div>
+                            <p><strong>{t("guardas.specifications.max_height")}:</strong></p>
+                            <p className="ml-2">1100 mm</p>
+                          </div>
+                        </div>
+                        <div className="space-y-1">
+                          <p><strong>View Crystal:</strong> {t("guardas.specifications.load_resistance")}</p>
+                          <p><strong>View Crystal Plus:</strong> {t("guardas.specifications.reinforced_system")}</p>
+                        </div>
+                        <p><strong>{t("guardas.specifications.finishes")}:</strong> {t("guardas.specifications.lacquered_anodized")}</p>
+                        <p><strong>{t("guardas.specifications.mounting_options")}:</strong> {t("guardas.specifications.on_slab")}</p>
+                      </div>
+                      
+                      {/* Technical Drawing Section */}
+                      <div className="border-t pt-4">
+                        <h4 className="font-semibold text-[#493F0B] mb-3 flex items-center">
+                          
+                    
+                        </h4>
+                        <div className="bg-white border-2 border-dashed border-[#493F0B]/20 rounded-lg p-4">
+                          <div className="relative h-48 bg-gray-50 rounded">
+                            <Image 
+                              src={crystal} 
+                              alt="View Crystal Technical Drawing"
+                              fill
+                              className="object-contain p-2"
+                            />
+                            <div className="absolute inset-0 hidden items-center justify-center text-[#493F0B]/60 text-sm bg-gray-50 rounded">
+                              <div className="text-center">
+                                <Ruler className="h-8 w-8 mx-auto mb-2 opacity-50" />
+                                {t("guardas.technical_drawing_placeholder")}
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                  )}
+                </div>
+
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-[#493F0B] mr-3 mt-0.5" />
@@ -152,8 +285,8 @@ export default function GuardasClientPage() {
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden order-1 lg:order-2">
                 <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/owqbybpzmgpsigy1kra6"
-                  alt={t("guardas.types.crystal.title")}
+                  src="https://smartwin.pt/wp-content/uploads/2024/06/crystal-view-1024x602.png"
+                  alt="View Crystal"
                   fill
                   className="object-cover"
                 />
@@ -166,28 +299,74 @@ export default function GuardasClientPage() {
       {/* Other Products Grid Section */}
       <section className="py-16">
         <div className="container mx-auto max-w-7xl px-6">
+          <h2 className="text-3xl font-bold text-[#493F0B] mb-12 text-center">{t("guardas.types.title")}</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* AC10 - 15/C */}
+            {/* AC10 - 15/A */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="relative h-64">
-                <Image src={AC1015C} alt="AC10 - 15/C" fill className="object-cover" />
+                <Image src="https://smartwin.pt/wp-content/uploads/2024/06/AC10-15A-1024x602.png" alt="AC10 - 15/A" fill className="object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">AC10 - 15/C</h3>
-                <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_15c.desc")}</p>
+                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_15a.title")}</h3>
+                <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_15a.desc")}</p>
+                
+                {/* Enhanced Specifications Accordion */}
+                <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
+                  <button 
+                    onClick={() => toggleProduct('ac15a')}
+                    className="w-full flex justify-between items-center text-left"
+                  >
+                    <span className="font-semibold text-[#493F0B] text-sm">
+                      {t("guardas.specifications.technical")} 
+                    </span>
+                    {expandedProduct === 'ac15a' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                  
+                  {expandedProduct === 'ac15a' && (
+                    <div className="mt-3 space-y-3">
+                      {/* Technical Specifications */}
+                      <div className="space-y-1 text-xs text-[#493F0B]/80">
+                        <p>
+                          <strong>{t("guardas.specifications.laminated_glass")}:</strong> 66.1 Laminado / 88.1 Laminado
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.max_dimensions")}:</strong> L 1200 mm A 1000 mm
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.counting_rule")}:</strong> {t("guardas.specifications.pieces_at_union")}
+                        </p>
+                      </div>
+                      
+                      {/* Technical Drawing */}
+                      <div className="border-t pt-3">
+                        <div className="bg-white border border-[#493F0B]/20 rounded p-2">
+                          <div className="relative h-32 bg-gray-50 rounded">
+                            <Image 
+                              src={AC1015A} 
+                              alt="AC10-15A Technical Drawing"
+                              fill
+                              className="object-contain p-1"
+                              
+                            />
+                            <div className="absolute inset-0 hidden items-center justify-center text-[#493F0B]/40 text-xs bg-gray-50 rounded">
+                              <Ruler className="h-6 w-6 opacity-50" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_15c.feature1")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_15a.feature1")}</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_15c.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_15c.feature3")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_15a.feature2")}</span>
                   </li>
                 </ul>
                 <Link href="/contacto">
@@ -201,23 +380,68 @@ export default function GuardasClientPage() {
             {/* AC10 - 15/B */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="relative h-64">
-                <Image src={AC1015B} alt="AC10 - 15/B" fill className="object-cover" />
+                <Image src="https://smartwin.pt/wp-content/uploads/2024/06/AC10-15B-1024x602.png" alt="AC10 - 15/B" fill className="object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">AC10 - 15/B</h3>
+                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_15b.title")}</h3>
                 <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_15b.desc")}</p>
+                
+                {/* Enhanced Specifications Accordion */}
+                <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
+                  <button 
+                    onClick={() => toggleProduct('ac15b')}
+                    className="w-full flex justify-between items-center text-left"
+                  >
+                    <span className="font-semibold text-[#493F0B] text-sm">
+                      {t("guardas.specifications.technical")}  
+                    </span>
+                    {expandedProduct === 'ac15b' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                  
+                  {expandedProduct === 'ac15b' && (
+                    <div className="mt-3 space-y-3">
+                      {/* Technical Specifications */}
+                      <div className="space-y-1 text-xs text-[#493F0B]/80">
+                        <p>
+                          <strong>{t("guardas.specifications.laminated_glass")}:</strong> 66.1 Laminado / 88.1 Laminado
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.max_dimensions")}:</strong> 1000 mm máximo
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.counting_rule")}:</strong> {t("guardas.specifications.pieces_per_glass")}
+                        </p>
+                      </div>
+                      
+                      {/* Technical Drawing */}
+                      <div className="border-t pt-3">
+                        <div className="bg-white border border-[#493F0B]/20 rounded p-2">
+                          <div className="relative h-32 bg-gray-50 rounded">
+                            <Image 
+                              src={AC1015B} 
+                              alt="AC10-15B Technical Drawing"
+                              fill
+                              className="object-contain p-1"
+                              
+                            />
+                            <div className="absolute inset-0 hidden items-center justify-center text-[#493F0B]/40 text-xs bg-gray-50 rounded">
+                              <Ruler className="h-6 w-6 opacity-50" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_15b.feature1")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_15b.feature1")}</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_15b.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_15b.feature3")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_15b.feature2")}</span>
                   </li>
                 </ul>
                 <Link href="/contacto">
@@ -228,26 +452,71 @@ export default function GuardasClientPage() {
               </div>
             </div>
 
-            {/* AC10 - 15/A */}
+            {/* AC10 - 15/C */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="relative h-64">
-                <Image src={AC1015A} alt="AC10 - 15/A" fill className="object-cover" />
+                <Image src="https://smartwin.pt/wp-content/uploads/2024/06/AC10-15C-1024x602.png" alt="AC10 - 15/C" fill className="object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">AC10 - 15/A</h3>
-                <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_15a.desc")}</p>
+                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_15c.title")}</h3>
+                <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_15c.desc")}</p>
+                
+                {/* Enhanced Specifications Accordion */}
+                <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
+                  <button 
+                    onClick={() => toggleProduct('ac15c')}
+                    className="w-full flex justify-between items-center text-left"
+                  >
+                    <span className="font-semibold text-[#493F0B] text-sm">
+                      {t("guardas.specifications.technical")} 
+                    </span>
+                    {expandedProduct === 'ac15c' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                  
+                  {expandedProduct === 'ac15c' && (
+                    <div className="mt-3 space-y-3">
+                      {/* Technical Specifications */}
+                      <div className="space-y-1 text-xs text-[#493F0B]/80">
+                        <p>
+                          <strong>{t("guardas.specifications.laminated_glass")}:</strong> 66.1 Laminado / 88.1 Laminado
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.max_dimensions")}:</strong> 1000 mm máximo
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.counting_rule")}:</strong> {t("guardas.specifications.pieces_per_glass")}
+                        </p>
+                      </div>
+                      
+                      {/* Technical Drawing */}
+                      <div className="border-t pt-3">
+                        <div className="bg-white border border-[#493F0B]/20 rounded p-2">
+                          <div className="relative h-32 bg-gray-50 rounded">
+                            <Image 
+                              src={AC1015C}
+                              alt="AC10-15C Technical Drawing"
+                              fill
+                              className="object-contain p-1"
+                              
+                            />
+                            <div className="absolute inset-0 hidden items-center justify-center text-[#493F0B]/40 text-xs bg-gray-50 rounded">
+                              <Ruler className="h-6 w-6 opacity-50" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_15a.feature1")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_15c.feature1")}</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_15a.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_15a.feature3")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_15c.feature2")}</span>
                   </li>
                 </ul>
                 <Link href="/contacto">
@@ -261,23 +530,67 @@ export default function GuardasClientPage() {
             {/* AC10 - 18 */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="relative h-64">
-                <Image src={AC1018} alt="AC10 - 18" fill className="object-fill" />
+                <Image src="https://smartwin.pt/wp-content/uploads/2024/06/9-1.png" alt="AC10 - 18" fill className="object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">AC10 - 18</h3>
+                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_18.title")}</h3>
                 <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_18.desc")}</p>
+                
+                {/* Enhanced Specifications Accordion */}
+                <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
+                  <button 
+                    onClick={() => toggleProduct('ac18')}
+                    className="w-full flex justify-between items-center text-left"
+                  >
+                    <span className="font-semibold text-[#493F0B] text-sm">
+                      {t("guardas.specifications.technical")}  
+                    </span>
+                    {expandedProduct === 'ac18' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                  
+                  {expandedProduct === 'ac18' && (
+                    <div className="mt-3 space-y-3">
+                      {/* Technical Specifications */}
+                      <div className="space-y-1 text-xs text-[#493F0B]/80">
+                        <p>
+                          <strong>{t("guardas.specifications.laminated_glass")}:</strong> 55.1 Laminado
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.max_dimensions")}:</strong> L 1200 mm A 1000 mm
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.counting_rule")}:</strong> {t("guardas.specifications.pieces_per_glass")}
+                        </p>
+                      </div>
+                      
+                      {/* Technical Drawing */}
+                      <div className="border-t pt-3">
+                        <div className="bg-white border border-[#493F0B]/20 rounded p-2">
+                          <div className="relative h-32 bg-gray-50 rounded">
+                            <Image 
+                              src={AC18}
+                              alt="AC10-18 Technical Drawing"
+                              fill
+                              className="object-contain p-1"
+                            />
+                            <div className="absolute inset-0 hidden items-center justify-center text-[#493F0B]/40 text-xs bg-gray-50 rounded">
+                              <Ruler className="h-6 w-6 opacity-50" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_18.feature1")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_18.feature1")}</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_18.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_18.feature3")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_18.feature2")}</span>
                   </li>
                 </ul>
                 <Link href="/contacto">
@@ -291,23 +604,68 @@ export default function GuardasClientPage() {
             {/* AC10 - 18/A */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <div className="relative h-64">
-                <Image src={AC1018A} alt="AC10 - 18/A" fill className="object-cover" />
+                <Image src="https://smartwin.pt/wp-content/uploads/2024/06/7-1.png" alt="AC10 - 18/A" fill className="object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">AC10 - 18/A</h3>
+                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_18a.title")}</h3>
                 <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_18a.desc")}</p>
+                
+                {/* Enhanced Specifications Accordion */}
+                <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
+                  <button 
+                    onClick={() => toggleProduct('ac18a')}
+                    className="w-full flex justify-between items-center text-left"
+                  >
+                    <span className="font-semibold text-[#493F0B] text-sm">
+                      {t("guardas.specifications.technical")} 
+                    </span>
+                    {expandedProduct === 'ac18a' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                  
+                  {expandedProduct === 'ac18a' && (
+                    <div className="mt-3 space-y-3">
+                      {/* Technical Specifications */}
+                      <div className="space-y-1 text-xs text-[#493F0B]/80">
+                        <p>
+                          <strong>{t("guardas.specifications.laminated_glass")}:</strong> 55.1 Laminado
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.max_dimensions")}:</strong> L 1200 mm A 1000 mm
+                        </p>
+                        <p>
+                          <strong>{t("guardas.specifications.counting_rule")}:</strong> {t("guardas.specifications.pieces_per_glass")}
+                        </p>
+                      </div>
+                      
+                      {/* Technical Drawing */}
+                      <div className="border-t pt-3">
+                        <div className="bg-white border border-[#493F0B]/20 rounded p-2">
+                          <div className="relative h-32 bg-gray-50 rounded">
+                            <Image 
+                              src={AC18A} 
+                              alt="AC10-18A Technical Drawing"
+                              fill
+                              className="object-contain p-1"
+                              
+                            />
+                            <div className="absolute inset-0 hidden items-center justify-center text-[#493F0B]/40 text-xs bg-gray-50 rounded">
+                              <Ruler className="h-6 w-6 opacity-50" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_18a.feature1")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_18a.feature1")}</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_18a.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("guardas.types.ac10_18a.feature3")}</span>
+                    <Check className="h-4 w-4 text-[#493F0B] mr-2 mt-0.5" />
+                    <span className="text-[#493F0B]/80 text-sm">{t("guardas.types.ac10_18a.feature2")}</span>
                   </li>
                 </ul>
                 <Link href="/contacto">
@@ -321,7 +679,9 @@ export default function GuardasClientPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+
+
+      {/* Final CTA Section */}
       <section className="py-16 bg-gray-200 text-[#493F0B]">
         <div className="container mx-auto max-w-7xl px-6 text-center">
           <h2 className="text-3xl font-bold mb-6">{t("guardas.cta.title")}</h2>

@@ -33,6 +33,7 @@ export function Navbar() {
     { name: t("nav.products"), sectionId: "produtos", hasDropdown: true },
     { name: t("nav.services"), sectionId: "servicos" },
     { name: t("nav.about"), sectionId: "sobre-nos" },
+
   ]
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -207,6 +208,9 @@ export function Navbar() {
             ))}
 
             {/* Contact link - always navigates to contact page */}
+            <Link href="/gallery" className="text-[#493F0B] hover:text-[#493F0B]/80 font-medium transition-colors">
+              {t("product.gallery")}
+            </Link>
             <Link href="/contacto" className="text-[#493F0B] hover:text-[#493F0B]/80 font-medium transition-colors">
               {t("nav.contact")}
             </Link>
