@@ -3,12 +3,11 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowLeft, X, ZoomIn } from "lucide-react"
-import { useState, useEffect } from "react"
+import { ArrowLeft, X, ZoomIn, Play, Pause } from "lucide-react"
+import { useState, useEffect, useRef } from "react"
 import { client } from "@/sanity/lib/client"
 import { groq } from "next-sanity"
 import { useLanguage } from "@/contexts/language-context"
-
 
 type GalleryImage = {
   id: number;
@@ -19,11 +18,24 @@ type GalleryImage = {
   description: string;
 }
 
-export default function GalleryPage() {
-    const { t } = useLanguage()
-  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null)
+type GalleryVideo = {
+  id: string;
+  title: string;
+  description: string;
+  videoUrl: string;
+  thumbnailUrl?: string;
+  category: string;
+  duration?: number;
+}
 
+export default function GalleryPage() {
+  const { t } = useLanguage()
+  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null)
+  const [selectedVideo, setSelectedVideo] = useState<GalleryVideo | null>(null)
   const [galleryImages, setGalleryImages] = useState<GalleryImage[]>([])
+  const [galleryVideos, setGalleryVideos] = useState<GalleryVideo[]>([])
+  const [playingVideos, setPlayingVideos] = useState<Set<string>>(new Set())
+  const videoRefs = useRef<{[key: string]: HTMLVideoElement}>({})
 
   useEffect(() => {
     // Fetch gallery images from Sanity
@@ -40,16 +52,70 @@ export default function GalleryPage() {
     `).then((data) => {
       setGalleryImages(data)
     })
+
+    // Fetch gallery videos from Sanity
+    client.fetch<GalleryVideo[]>(groq`
+      *[_type == "galleryVideo"]{
+        _id,
+        "id": _id,
+        title,
+        description,
+        "videoUrl": videoFile.asset->url,
+        "thumbnailUrl": thumbnail.asset->url,
+        category,
+        duration
+      }
+    `).then((data) => {
+      setGalleryVideos(data)
+      // Pause all videos after DOM updates
+      setTimeout(() => {
+        Object.values(videoRefs.current).forEach(video => {
+          if (video && !video.paused) {
+            video.pause()
+          }
+        })
+      }, 100)
+    })
   }, [])
 
   const filteredImages: GalleryImage[] = galleryImages
+  const filteredVideos: GalleryVideo[] = galleryVideos
 
-  const openLightbox = (image: GalleryImage) => {
+  const openImageLightbox = (image: GalleryImage) => {
     setSelectedImage(image)
+  }
+
+  const openVideoLightbox = (video: GalleryVideo) => {
+    setSelectedVideo(video)
   }
 
   const closeLightbox = () => {
     setSelectedImage(null)
+    setSelectedVideo(null)
+  }
+
+  const toggleVideoPlay = (videoId: string) => {
+    const video = videoRefs.current[videoId]
+    if (!video) return
+
+    if (playingVideos.has(videoId)) {
+      video.pause()
+      setPlayingVideos(prev => {
+        const newSet = new Set(prev)
+        newSet.delete(videoId)
+        return newSet
+      })
+    } else {
+      video.play()
+      setPlayingVideos(prev => new Set(prev).add(videoId))
+    }
+  }
+
+  const formatDuration = (seconds?: number) => {
+    if (!seconds) return ''
+    const mins = Math.floor(seconds / 60)
+    const secs = seconds % 60
+    return `${mins}:${secs.toString().padStart(2, '0')}`
   }
 
   return (
@@ -81,15 +147,18 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Gallery Grid */}
+      {/* Images Gallery Grid */}
       <section className="py-16">
         <div className="container mx-auto max-w-7xl px-6">
+          <h2 className="text-3xl font-bold text-[#493F0B] mb-8 text-center">
+            {t("gallery.images.title") || "Project Images"}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredImages.map((image: GalleryImage) => (
               <div
                 key={image.id}
                 className="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow cursor-pointer"
-                onClick={() => openLightbox(image)}
+                onClick={() => openImageLightbox(image)}
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
@@ -107,30 +176,105 @@ export default function GalleryPage() {
           </div>
 
           {filteredImages.length === 0 && (
-            <div className="text-center py-16">
-              <p className="text-[#493F0B]/60 text-lg">{t("gallery.empty")}</p>
+            <div className="text-center py-8">
+              <p className="text-[#493F0B]/60 text-lg">{t("gallery.images.empty") || "No images available"}</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Videos Gallery Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto max-w-7xl px-6">
+          <h2 className="text-3xl font-bold text-[#493F0B] mb-8 text-center">
+            {t("gallery.videos.title") || "Project Videos"}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredVideos.map((video: GalleryVideo) => (
+              <div
+                key={video.id}
+                className="group relative bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
+              >
+                <div className="relative h-64 overflow-hidden bg-black">
+                  <video
+                    ref={(el) => {
+                      if (el) videoRefs.current[video.id] = el
+                    }}
+                    className="w-full h-full object-cover"
+                    poster={video.thumbnailUrl}
+                    muted
+                    loop
+                    playsInline
+                    onPlay={() => setPlayingVideos(prev => new Set(prev).add(video.id))}
+                    onPause={() => setPlayingVideos(prev => {
+                      const newSet = new Set(prev)
+                      newSet.delete(video.id)
+                      return newSet
+                    })}
+                  >
+                    <source src={video.videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  
+                  {/* Video Controls Overlay */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <button
+                      onClick={() => toggleVideoPlay(video.id)}
+                      className="bg-white/90 hover:bg-white text-black rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    >
+                      {playingVideos.has(video.id) ? (
+                        <Pause className="h-6 w-6" />
+                      ) : (
+                        <Play className="h-6 w-6 ml-1" />
+                      )}
+                    </button>
+                  </div>
+
+                  {/* Expand button */}
+                  <button
+                    onClick={() => openVideoLightbox(video)}
+                    className="absolute top-3 right-3 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  >
+                    <ZoomIn className="h-4 w-4" />
+                  </button>
+
+                  {/* Duration badge */}
+                  {video.duration && (
+                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                      {formatDuration(video.duration)}
+                    </div>
+                  )}
+                </div>
+
+              </div>
+            ))}
+          </div>
+
+          {filteredVideos.length === 0 && (
+            <div className="text-center py-8">
+              <p className="text-[#493F0B]/60 text-lg">{t("gallery.videos.empty") || "No videos available"}</p>
             </div>
           )}
         </div>
       </section>
 
       {/* Statistics Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#d3d3d3]">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div className="bg-[#d3d3d3]/30 p-6 rounded-lg">
+            <div className="bg-white/50 p-6 rounded-lg">
               <div className="text-3xl font-bold text-[#493F0B] mb-2">500+</div>
               <div className="text-[#493F0B]/80">{t("gallery.stats.projects")}</div>
             </div>
-            <div className="bg-[#d3d3d3]/30 p-6 rounded-lg">
+            <div className="bg-white/50 p-6 rounded-lg">
               <div className="text-3xl font-bold text-[#493F0B] mb-2">15+</div>
               <div className="text-[#493F0B]/80">{t("gallery.stats.years")}</div>
             </div>
-            <div className="bg-[#d3d3d3]/30 p-6 rounded-lg">
+            <div className="bg-white/50 p-6 rounded-lg">
               <div className="text-3xl font-bold text-[#493F0B] mb-2">100%</div>
               <div className="text-[#493F0B]/80">{t("gallery.stats.satisfaction")}</div>
             </div>
-            <div className="bg-[#d3d3d3]/30 p-6 rounded-lg">
+            <div className="bg-white/50 p-6 rounded-lg">
               <div className="text-3xl font-bold text-[#493F0B] mb-2">24/7</div>
               <div className="text-[#493F0B]/80">{t("gallery.stats.support")}</div>
             </div>
@@ -153,7 +297,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Lightbox Modal */}
+      {/* Image Lightbox Modal */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
           <div className="relative max-w-4xl max-h-full">
@@ -171,6 +315,38 @@ export default function GalleryPage() {
                 height={600}
                 className="max-w-full max-h-[80vh] object-contain rounded-lg"
               />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Video Lightbox Modal */}
+      {selectedVideo && (
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+          <div className="relative max-w-4xl max-h-full w-full">
+            <button
+              onClick={closeLightbox}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors z-10"
+            >
+              <X className="h-8 w-8" />
+            </button>
+            <div className="relative bg-black rounded-lg overflow-hidden">
+              <video
+                className="w-full max-h-[80vh] object-contain"
+                controls
+                autoPlay
+                poster={selectedVideo.thumbnailUrl}
+              >
+                <source src={selectedVideo.videoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              {/* Video info overlay */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <h3 className="text-white font-semibold text-lg mb-1">{selectedVideo.title}</h3>
+                {selectedVideo.description && (
+                  <p className="text-white/80 text-sm">{selectedVideo.description}</p>
+                )}
+              </div>
             </div>
           </div>
         </div>

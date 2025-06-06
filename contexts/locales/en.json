@@ -568,5 +568,10 @@
 
   "gallery.cta.title": "Ready to Start Your Project?",
   "gallery.cta.description": "Contact us today to discuss your requirements and get a personalized quote for your balcony guard installation.",
-  "gallery.cta.button": "Get Free Quote"
+  "gallery.cta.button": "Get Free Quote",
+  
+  "gallery.images.title": "Project Gallery",
+  "gallery.videos.title": "Video Gallery"
+
+
   }
