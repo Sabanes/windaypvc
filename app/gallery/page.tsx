@@ -67,14 +67,6 @@ export default function GalleryPage() {
       }
     `).then((data) => {
       setGalleryVideos(data)
-      // Pause all videos after DOM updates
-      setTimeout(() => {
-        Object.values(videoRefs.current).forEach(video => {
-          if (video && !video.paused) {
-            video.pause()
-          }
-        })
-      }, 100)
     })
   }, [])
 
@@ -205,6 +197,7 @@ export default function GalleryPage() {
                     muted
                     loop
                     playsInline
+                    autoPlay
                     onPlay={() => setPlayingVideos(prev => new Set(prev).add(video.id))}
                     onPause={() => setPlayingVideos(prev => {
                       const newSet = new Set(prev)
@@ -246,6 +239,18 @@ export default function GalleryPage() {
                   )}
                 </div>
 
+                {/* Video Info */}
+{/*                 <div className="p-4">
+                  <h3 className="font-semibold text-[#493F0B] mb-1">{video.title}</h3>
+                  {video.description && (
+                    <p className="text-sm text-[#493F0B]/70 line-clamp-2">{video.description}</p>
+                  )}
+                  {video.category && (
+                    <span className="inline-block mt-2 px-2 py-1 bg-[#493F0B]/10 text-[#493F0B] text-xs rounded">
+                      {video.category}
+                    </span>
+                  )}
+                </div> */}
               </div>
             ))}
           </div>
