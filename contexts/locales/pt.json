@@ -527,5 +527,15 @@
   "gallery.cta.description": "Contacte-nos hoje para discutir os seus requisitos e obter um orçamento personalizado para a instalação de guardas de varanda.",
   "gallery.cta.button": "Pedir Orçamento",
   "gallery.images.title": "Galeria de Projetos",
-  "gallery.videos.title": "Galeria de Vídeos"
+  "gallery.videos.title": "Galeria de Vídeos",
+
+  "ar.modal.title": "Visualizar em RA",
+  "ar.modal.description": "Escolha como deseja visualizar {productName} em Realidade Aumentada",
+  "ar.modal.loading": "A carregar...",
+  "ar.modal.view.ios": "Ver no iOS",
+  "ar.modal.view.android": "Ver no Android",
+  "ar.modal.instructions": "Aponte a câmera do seu dispositivo para uma superfície plana para visualizar o modelo em 3D.",
+  "pvc.models.hide.details": "Ocultar Detalhes Técnicos",
+  "pvc.models.show.details": "Mostrar Detalhes Técnicos",
+  "pvc.categories.ar.preview": "Pré-visualização AR"
 }

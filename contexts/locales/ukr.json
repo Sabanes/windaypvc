@@ -525,6 +525,16 @@
   "gallery.cta.button": "Отримати Кошторис",
   
   "gallery.images.title": "Зображення",
-  "gallery.videos.title": "Відео"
+  "gallery.videos.title": "Відео",
+
+  "ar.modal.title": "Переглянути в AR",
+  "ar.modal.description": "Виберіть, як ви хочете переглянути {productName} у доповненій реальності",
+  "ar.modal.loading": "Завантаження...",
+  "ar.modal.view.ios": "Переглянути на iOS",
+  "ar.modal.view.android": "Переглянути на Android",
+  "ar.modal.instructions": "Наведіть камеру свого пристрою на плоску поверхню, щоб переглянути 3D-модель.",
+  "pvc.models.hide.details": "Приховати технічні деталі",
+  "pvc.models.show.details": "Показати технічні деталі",
+  "pvc.categories.ar.preview": "AR Перегляд"
 
   }

@@ -571,7 +571,17 @@
   "gallery.cta.button": "Get Free Quote",
   
   "gallery.images.title": "Project Gallery",
-  "gallery.videos.title": "Video Gallery"
+  "gallery.videos.title": "Video Gallery",
+
+  "ar.modal.title": "View in AR",
+  "ar.modal.description": "Choose how you want to view {productName} in Augmented Reality",
+  "ar.modal.loading": "Loading...",
+  "ar.modal.view.ios": "View on iOS",
+  "ar.modal.view.android": "View on Android",
+  "ar.modal.instructions": "Point your device's camera at a flat surface to view the 3D model.",
+  "pvc.models.hide.details": "Hide Technical Details",
+  "pvc.models.show.details": "Show Technical Details",
+  "pvc.categories.ar.preview": "AR Preview"
 
 
   }

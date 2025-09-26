@@ -3,17 +3,19 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowLeft, Check } from "lucide-react"
+import { ArrowLeft, Check, View } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { useCallback, useEffect, useRef, useState } from "react"
+import type { MouseEvent, MutableRefObject } from "react"
+import ArViewModal from "./modal"
 
 // First, let's update the ModelCard component
-function ModelCard({
-  title,
-  image,
-  description,
-  technicalDetails,
-  id
+function ModelCard({ 
+  title, 
+  image, 
+  description, 
+  technicalDetails, 
+  id 
 }: {
   title: string
   image: string
@@ -21,26 +23,22 @@ function ModelCard({
   technicalDetails: string
   id: string
 }) {
-  // Use React's useRef to create a stable reference
-  const cardRef = useRef(null);
+  const { t } = useLanguage()
+  const cardRef = useRef<HTMLDivElement | null>(null);
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);
 
-  // Use useCallback to ensure stable function identity
-  const toggleDetails = useCallback((e) => {
-    // Stop event propagation to prevent bubbling
+  const toggleDetails = useCallback((e: MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     setIsDetailsOpen(prevState => !prevState);
   }, []);
 
-  // Add click-outside handler to close details when clicking elsewhere
   useEffect(() => {
-    function handleClickOutside(event) {
-      if (cardRef.current && !cardRef.current.contains(event.target) && isDetailsOpen) {
+    function handleClickOutside(event: MouseEvent | Event) {
+      if (cardRef.current && !cardRef.current.contains(event.target as Node) && isDetailsOpen) {
         setIsDetailsOpen(false);
       }
     }
     
-    // Only add listener if details are open
     if (isDetailsOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     }
@@ -73,7 +71,7 @@ function ModelCard({
           onClick={toggleDetails}
           className="w-full mt-2 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white"
         >
-          {isDetailsOpen ? "Hide Technical Details" : "Show Technical Details"}
+          {isDetailsOpen ? t("pvc.models.hide.details") : t("pvc.models.show.details")}
         </Button>
         {isDetailsOpen && (
           <div className="whitespace-pre-wrap text-sm text-[#493F0B]/90 mt-4 bg-[#f1f1f1] p-4 rounded-md border border-[#493F0B]/20">
@@ -86,6 +84,10 @@ function ModelCard({
 }
 export default function PVCClientPage() {
   const { t } = useLanguage()
+  const [activeModal, setActiveModal] = useState<string | null>(null)
+
+  const openModal = (id: string) => setActiveModal(id)
+  const closeModal = () => setActiveModal(null)
 
   return (
     <div className="bg-[#d3d3d3] min-h-screen">
@@ -212,8 +214,15 @@ export default function PVCClientPage() {
                     <span className="text-[#493F0B]/80">{t("pvc.categories.a70.feature3")}</span>
                   </li>
                 </ul>
+                <Button
+                  onClick={() => openModal('a70')}
+                  className="w-full mt-3 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white"
+                >
+                  <View className="mr-2 h-5 w-5" />
+                  {t('pvc.categories.ar.preview')}
+                </Button>
                 <Link href="/contacto">
-                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
+                  <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
                 </Link>
                 <Link href="#models">
                   <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
@@ -426,6 +435,15 @@ export default function PVCClientPage() {
           </Link>
         </div>
       </section>
+      {activeModal === 'a70' && (
+        <ArViewModal
+          isOpen
+          onClose={closeModal}
+          productName="A70"
+          usdz="/3d/a70.usdz"
+          glb="/3d/a70.glb"
+        />
+      )}
     </div>
   )
 }
