@@ -537,5 +537,20 @@
   "ar.modal.instructions": "Aponte a câmera do seu dispositivo para uma superfície plana para visualizar o modelo em 3D.",
   "pvc.models.hide.details": "Ocultar Detalhes Técnicos",
   "pvc.models.show.details": "Mostrar Detalhes Técnicos",
-  "pvc.categories.ar.preview": "Pré-visualização AR"
+  "pvc.categories.ar.preview": "Pré-visualização AR",
+
+  "blog.title": "Blog WINDAYPVC",
+  "blog.description": "Dicas, insights e tendências sobre janelas e portas PVC",
+  "blog.featured": "Destaque",
+  "blog.readMore": "Ler Mais",
+  "blog.loading": "A carregar...",
+  "blog.noArticles": "Nenhum artigo encontrado.",
+  "blog.relatedArticles": "Artigos Relacionados",
+  "blog.post.notFound": "Artigo não encontrado",
+  "blog.post.back": "Voltar ao Blog",
+  "blog.post.share.title": "Gostou deste artigo?",
+  "blog.post.share.description": "Entre em contato conosco para saber mais sobre nossas janelas e portas PVC.",
+  "blog.post.share.cta": "Pedir Orçamento",
+  "blog.post.backButton": "Voltar",
+  "blog.readMoreLink": "Ler mais →"
 }

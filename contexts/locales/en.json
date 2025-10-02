@@ -581,7 +581,22 @@
   "ar.modal.instructions": "Point your device's camera at a flat surface to view the 3D model.",
   "pvc.models.hide.details": "Hide Technical Details",
   "pvc.models.show.details": "Show Technical Details",
-  "pvc.categories.ar.preview": "AR Preview"
+  "pvc.categories.ar.preview": "AR Preview",
+
+  "blog.title": "WINDAYPVC Blog",
+  "blog.description": "Tips, insights and trends about PVC windows and doors",
+  "blog.featured": "Featured",
+  "blog.readMore": "Read More",
+  "blog.loading": "Loading...",
+  "blog.noArticles": "No articles found.",
+  "blog.relatedArticles": "Related Articles",
+  "blog.post.notFound": "Post not found",
+  "blog.post.back": "Back to Blog",
+  "blog.post.share.title": "Did you like this article?",
+  "blog.post.share.description": "Contact us to learn more about our PVC windows and doors.",
+  "blog.post.share.cta": "Request Quote",
+  "blog.post.backButton": "Back",
+  "blog.readMoreLink": "Read more →"
 
 
   }

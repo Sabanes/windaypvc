@@ -535,6 +535,21 @@
   "ar.modal.instructions": "Наведіть камеру свого пристрою на плоску поверхню, щоб переглянути 3D-модель.",
   "pvc.models.hide.details": "Приховати технічні деталі",
   "pvc.models.show.details": "Показати технічні деталі",
-  "pvc.categories.ar.preview": "AR Перегляд"
+  "pvc.categories.ar.preview": "AR Перегляд",
+
+  "blog.title": "Блог WINDAYPVC",
+  "blog.description": "Поради, ідеї та тенденції щодо ПВХ вікон та дверей",
+  "blog.featured": "Рекомендоване",
+  "blog.readMore": "Читати далі",
+  "blog.loading": "Завантаження...",
+  "blog.noArticles": "Статей не знайдено.",
+  "blog.relatedArticles": "Схожі статті",
+  "blog.post.notFound": "Статтю не знайдено",
+  "blog.post.back": "Повернутися до блогу",
+  "blog.post.share.title": "Вам сподобалася ця стаття?",
+  "blog.post.share.description": "Зв'яжіться з нами, щоб дізнатися більше про наші ПВХ вікна та двері.",
+  "blog.post.share.cta": "Запросити ціну",
+  "blog.post.backButton": "Назад",
+  "blog.readMoreLink": "Читати далі →"
 
   }
