@@ -8,6 +8,7 @@ import { Menu, X, ChevronDown, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useLanguage } from "@/contexts/language-context"
+import { TopBar } from "./sections/top-bar"
 
 export function Navbar() {
   const { t } = useLanguage()
@@ -113,11 +114,14 @@ export function Navbar() {
   }
 
   return (
+    <>
+    
     <header
       className={`sticky top-0 z-50 ${
         scrolled ? "bg-[#d3d3d3]/95" : "bg-[#d3d3d3]/90"
       } backdrop-blur-sm border-b border-[#493F0B]/10 transition-all duration-300`}
     >
+      <TopBar />
       <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           {/* Logo */}
@@ -313,5 +317,6 @@ export function Navbar() {
         </div>
       )}
     </header>
+    </>
   )
 }

@@ -2,6 +2,7 @@ import type React from "react"
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { TopBar } from '@/components/sections/top-bar'
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/sections/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
@@ -116,6 +117,7 @@ export default function RootLayout({
           <LanguageProvider>
             <ScrollToTop />
             <div className="flex flex-col min-h-screen">
+              
               <Navbar />
               <main className="flex-grow">{children}</main>
               <Footer />
