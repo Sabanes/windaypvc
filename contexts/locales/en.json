@@ -596,7 +596,12 @@
   "blog.post.share.description": "Contact us to learn more about our PVC windows and doors.",
   "blog.post.share.cta": "Request Quote",
   "blog.post.backButton": "Back",
-  "blog.readMoreLink": "Read more →"
+  "blog.readMoreLink": "Read more →",
 
+  "pvc.categories.door.title": "Doors",
+  "pvc.categories.door.desc": "High-quality doors with excellent thermal and acoustic insulation.",
+  "pvc.categories.door.feature1": "Uw up to 0.9 W/m²K",
+  "pvc.categories.door.feature2": "Glass up to 40mm",
+  "pvc.categories.door.feature3": "Acoustic insulation up to 46dB"
 
   }

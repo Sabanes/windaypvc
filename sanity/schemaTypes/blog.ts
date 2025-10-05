@@ -176,6 +176,33 @@ export default {
       title: 'Featured Post',
       type: 'boolean',
       initialValue: false
+    },
+    {
+      name: 'metaTitle',
+      title: 'Meta Title',
+      type: 'object',
+      fields: [
+        { name: 'pt', title: 'Portuguese', type: 'string' },
+        { name: 'en', title: 'English', type: 'string' },
+        { name: 'uk', title: 'Ukrainian', type: 'string' }
+      ]
+    },
+    {
+      name: 'metaDescription',
+      title: 'Meta Description',
+      type: 'object',
+      fields: [
+        { name: 'pt', title: 'Portuguese', type: 'text', rows: 3 },
+        { name: 'en', title: 'English', type: 'text', rows: 3 },
+        { name: 'uk', title: 'Ukrainian', type: 'text', rows: 3 }
+      ]
+    },
+    {
+      name: 'keywords',
+      title: 'Keywords',
+      type: 'array',
+      of: [{ type: 'string' }],
+      description: 'Keywords for SEO, separated by commas.'
     }
   ],
   preview: {

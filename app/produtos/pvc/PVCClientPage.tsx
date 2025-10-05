@@ -8,6 +8,7 @@ import { useLanguage } from "@/contexts/language-context"
 import { useCallback, useEffect, useRef, useState } from "react"
 import type { MouseEvent, MutableRefObject } from "react"
 import ArViewModal from "./modal"
+import EnhancedPVCSection from "./cards"
 
 // First, let's update the ModelCard component
 function ModelCard({ 
@@ -180,211 +181,52 @@ export default function PVCClientPage() {
 
 
 
-      {/* Categories Section */}
-      <section className="py-16">
-        <div className="container mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold text-[#493F0B] mb-4 text-center">{t("pvc.categories.title")}</h2>
-          <p className="text-[#493F0B]/80 text-center max-w-3xl mx-auto mb-12">{t("pvc.categories.description")}</p>
+    <EnhancedPVCSection openModal={openModal} />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* A70 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64 p-4">
-                <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gjgrvcanievk7qjuoeq6"
-                  alt="Janela A70"
-                  fill
-                  className="object-contain rounded-lg"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">A70</h3>
-                <p className="text-[#493F0B]/80 mb-4">{t("pvc.categories.a70.desc")}</p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.a70.feature1")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.a70.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.a70.feature3")}</span>
-                  </li>
-                </ul>
-                <Button
-                  onClick={() => openModal('a70')}
-                  className="w-full mt-3 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white"
-                >
-                  <View className="mr-2 h-5 w-5" />
-                  {t('pvc.categories.ar.preview')}
-                </Button>
-                <Link href="/contacto">
-                  <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
-                </Link>
-                <Link href="#models">
-                  <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
-                </Link>
-              </div>
-            </div>
+    {/* Models Overview Section */}
+        <section id="models" className="py-16 bg-[#f3f3f3]">
+              <div className="container mx-auto max-w-7xl px-6">
+                <h2 className="text-3xl font-bold text-[#493F0B] mb-12 text-center">{t("pvc.models.title")}</h2>
 
-            {/* C70 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64 p-4">
-                <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/eerq3jd2ouvobchnboct"
-                  alt="Janela C70"
-                  fill
-                  className="object-contain rounded-lg"
-                />
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  {/* Use an array to map over instead of manually placing components */}
+                  {[
+                    {
+                      id: "a70-model",
+                      title: t("pvc.models.a70.title"),
+                      image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gt6bprxdoaadcjadfonh",
+                      description: t("pvc.models.a70.description"),
+                      technicalDetails: t("pvc.models.a70.details")
+                    },
+                    {
+                      id: "c70-model",
+                      title: t("pvc.models.c70.title"),
+                      image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gsjiz9rvlilfz1tw9g1s",
+                      description: t("pvc.models.c70.description"),
+                      technicalDetails: t("pvc.models.c70.details")
+                    },
+                    {
+                      id: "e170-model",
+                      title: t("pvc.models.e170.title"),
+                      image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/tfpz2lfqt81ushrgdllk",
+                      description: t("pvc.models.e170.description"),
+                      technicalDetails: t("pvc.models.e170.details")
+                    }
+                  ].map((model) => (
+                    <div key={model.id} className="card-wrapper">
+                      <ModelCard
+                        id={model.id}
+                        title={model.title}
+                        image={model.image}
+                        description={model.description}
+                        technicalDetails={model.technicalDetails}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">C70</h3>
-                <p className="text-[#493F0B]/80 mb-4">{t("pvc.categories.c70.desc")}</p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.c70.feature1")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.c70.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.c70.feature3")}</span>
-                  </li>
-                </ul>
-                <Link href="/contacto">
-                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
-                </Link>
-                <Link  href="#models">
-                  <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
-                </Link>
-              </div>
-            </div>
-
-            {/* Corredora Enlevável */}
-
-            {/* Janela Projetante */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64">
-                <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/ht4xsfin0ipe9b2wd9qj"
-                  alt="Janela Projetante"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("pvc.categories.projetante.title")}</h3>
-                <p className="text-[#493F0B]/80 mb-4">{t("pvc.categories.projetante.desc")}</p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.projetante.feature1")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.projetante.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.projetante.feature3")}</span>
-                  </li>
-                </ul>
-                <Link href="/contacto">
-                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
-                </Link>
-                
-              </div>
-            </div>
-
-            {/* E 170 de Correr Elevável */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="relative h-64 p-4">
-                <Image
-                  src="https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/loz4eb5is806pdlyjvpb"
-                  alt="E 170 de Correr Elevável"
-                  fill
-                  className="object-contain rounded-lg"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("pvc.categories.e170.title")}</h3>
-                <p className="text-[#493F0B]/80 mb-4">{t("pvc.categories.e170.desc")}</p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.e170.feature1")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.e170.feature2")}</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-[#493F0B] mr-2 mt-0.5" />
-                    <span className="text-[#493F0B]/80">{t("pvc.categories.e170.feature3")}</span>
-                  </li>
-                </ul>
-                <Link href="/contacto">
-                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
-                </Link>
-                <Link  href="#models">
-                  <Button className="w-full mt-3 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.details")}</Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-{/* Models Overview Section */}
-<section id="models" className="py-16 bg-[#f3f3f3]">
-      <div className="container mx-auto max-w-7xl px-6">
-        <h2 className="text-3xl font-bold text-[#493F0B] mb-12 text-center">{t("pvc.models.title")}</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Use an array to map over instead of manually placing components */}
-          {[
-            {
-              id: "a70-model",
-              title: t("pvc.models.a70.title"),
-              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gt6bprxdoaadcjadfonh",
-              description: t("pvc.models.a70.description"),
-              technicalDetails: t("pvc.models.a70.details")
-            },
-            {
-              id: "c70-model",
-              title: t("pvc.models.c70.title"),
-              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/gsjiz9rvlilfz1tw9g1s",
-              description: t("pvc.models.c70.description"),
-              technicalDetails: t("pvc.models.c70.details")
-            },
-            {
-              id: "e170-model",
-              title: t("pvc.models.e170.title"),
-              image: "https://res.cloudinary.com/dcraqvlmb/image/upload/f_auto,q_auto/v1/Winday/tfpz2lfqt81ushrgdllk",
-              description: t("pvc.models.e170.description"),
-              technicalDetails: t("pvc.models.e170.details")
-            }
-          ].map((model) => (
-            <div key={model.id} className="card-wrapper">
-              <ModelCard
-                id={model.id}
-                title={model.title}
-                image={model.image}
-                description={model.description}
-                technicalDetails={model.technicalDetails}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>  
-  )
+        </section>  
+      )
 
       {/* CLASSE+ Certification Section */}
       <section className="py-16 bg-[#493F0B]/5">

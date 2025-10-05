@@ -552,5 +552,12 @@
   "blog.post.share.description": "Entre em contato conosco para saber mais sobre nossas janelas e portas PVC.",
   "blog.post.share.cta": "Pedir Orçamento",
   "blog.post.backButton": "Voltar",
-  "blog.readMoreLink": "Ler mais →"
+  "blog.readMoreLink": "Ler mais →",
+
+
+  "pvc.categories.door.title": "Portas",
+"pvc.categories.door.desc": "Portas de alta qualidade com excelente isolamento térmico e acústico.",
+"pvc.categories.door.feature1": "Uw até 0,9 W/m²K",
+"pvc.categories.door.feature2": "Vidro até 40mm",
+"pvc.categories.door.feature3": "Isolamento acústico até 46dB"
 }

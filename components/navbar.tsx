@@ -117,7 +117,7 @@ export function Navbar() {
     <>
     
     <header
-      className={`sticky top-0 z-50 ${
+      className={`fixed top-0 left-0 w-full z-50 ${
         scrolled ? "bg-[#d3d3d3]/95" : "bg-[#d3d3d3]/90"
       } backdrop-blur-sm border-b border-[#493F0B]/10 transition-all duration-300`}
     >
@@ -137,7 +137,7 @@ export function Navbar() {
           </Link>
 
           {/* Mobile menu button and language switcher */}
-          <div className="flex items-center gap-2 lg:hidden">
+          <div className="flex items-center lg:hidden">
             <LanguageSwitcher />
             <Button
               variant="ghost"
@@ -146,7 +146,7 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
             >
-              {mobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+              {mobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="!h-6 !w-6" />}
             </Button>
           </div>
 
@@ -214,6 +214,9 @@ export function Navbar() {
             {/* Contact link - always navigates to contact page */}
             <Link href="/gallery" className="text-[#493F0B] hover:text-[#493F0B]/80 font-medium transition-colors">
               {t("product.gallery")}
+            </Link>
+            <Link href="/blog" className="text-[#493F0B] hover:text-[#493F0B]/80 font-medium transition-colors">
+              Blog
             </Link>
             <Link href="/contacto" className="text-[#493F0B] hover:text-[#493F0B]/80 font-medium transition-colors">
               {t("nav.contact")}

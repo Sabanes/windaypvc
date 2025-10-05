@@ -75,7 +75,7 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#493F0B] to-[#6B5E0F]">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#493F0B] to-[#6B5E0F] pt-20">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         </div>

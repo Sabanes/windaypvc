@@ -22,12 +22,10 @@ export function LanguageSwitcher() {
       <Button
         variant="ghost"
         size="sm"
-        className="flex items-center gap-1 text-[#493F0B] hover:bg-[#493F0B]/10"
+        className="flex items-center text-[#493F0B] hover:bg-[#493F0B]/10"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Globe className="h-4 w-4 mr-1" />
-        <span className="mr-1">{currentLanguage?.flag}</span>
-        <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+        <Globe className="h-5 w-5" />
       </Button>
 
       {isOpen && (

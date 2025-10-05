@@ -550,6 +550,11 @@
   "blog.post.share.description": "Зв'яжіться з нами, щоб дізнатися більше про наші ПВХ вікна та двері.",
   "blog.post.share.cta": "Запросити ціну",
   "blog.post.backButton": "Назад",
-  "blog.readMoreLink": "Читати далі →"
+  "blog.readMoreLink": "Читати далі →",
 
+  "pvc.categories.door.title": "Двері",
+  "pvc.categories.door.desc": "Високоякісні двері з відмінною тепло- та звукоізоляцією.",
+  "pvc.categories.door.feature1": "Uw до 0,9 Вт/м²K",
+  "pvc.categories.door.feature2": "Скло до 40 мм",
+  "pvc.categories.door.feature3": "Акустична ізоляція до 46 дБ"
   }
