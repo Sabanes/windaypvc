@@ -602,6 +602,7 @@
   "pvc.categories.door.desc": "High-quality doors with excellent thermal and acoustic insulation.",
   "pvc.categories.door.feature1": "Uw up to 0.9 W/m²K",
   "pvc.categories.door.feature2": "Glass up to 40mm",
-  "pvc.categories.door.feature3": "Acoustic insulation up to 46dB"
+  "pvc.categories.door.feature3": "Acoustic insulation up to 46dB",
+  "pvc.open.catalog": "Open Catalog"
 
   }

@@ -89,7 +89,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           {hasPdf && (
             <Link href="/door-details.pdf" target="_blank">
               <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 mb-3 text-white">
-                {t("pvc.more.details")}
+                {t("pvc.open.catalog")}
               </Button>
             </Link>
           )}
