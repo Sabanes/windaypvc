@@ -3,8 +3,8 @@
 import type React from "react"
 import "./globals.css"
 import { Inter } from "next/font/google"
+import { usePathname } from 'next/navigation'
 import { ThemeProvider } from "@/components/theme-provider"
-import { TopBar } from '@/components/sections/top-bar'
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/sections/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
@@ -18,6 +18,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const pathname = usePathname()
+  const isStudio = pathname.startsWith('/studio')
+
   return (
     <html lang="pt-PT">
       <head>
@@ -54,7 +57,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <LoadingScreen 
-          videoUrl="https://41edpnogvq.ucarecd.net/3cf8ab24-4c7f-43c8-aac7-99763baec311/"
+          videoUrl="https://41edpnogvq.ucarecd.net/b63918d0-646e-499d-9212-66164850d19d/"
           minDuration={6000}
         />
         
@@ -62,9 +65,9 @@ export default function RootLayout({
           <LanguageProvider>
             <ScrollToTop />
             <div className="flex flex-col min-h-screen">
-              <Navbar />
-              <main className="flex-grow">{children}</main>
-              <Footer />
+              {!isStudio && <Navbar />}
+              <main className="flex-grow mt-24">{children}</main>
+              {!isStudio && <Footer />}
             </div>
           </LanguageProvider>
         </ThemeProvider>

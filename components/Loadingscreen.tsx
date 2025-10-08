@@ -29,7 +29,7 @@ export default function LoadingScreen({
 
   return (
     <div 
-      className={`fixed inset-0 z-[9999] flex items-center justify-center bg-black transition-opacity duration-500 ${
+      className={`fixed inset-0 z-[9999] flex items-center justify-center bg-grey-400 transition-opacity duration-500 ${
         fadeOut ? 'opacity-0' : 'opacity-100'
       }`}
       style={{ pointerEvents: fadeOut ? 'none' : 'auto' }}
@@ -39,7 +39,7 @@ export default function LoadingScreen({
         muted
         loop
         playsInline
-        className="w-full h-full object-cover"
+        className="w-[100%] h-[100%] object-cover"
       >
         <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.

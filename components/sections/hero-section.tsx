@@ -10,7 +10,7 @@ export function HeroSection() {
   const { t } = useLanguage()
 
   return (
-    <section id="hero" className="relative overflow-hidden mt-20">
+    <section id="hero" className="relative overflow-hidden ">
       {/* Background image with gradient overlay */}
       <div className="absolute inset-0 z-0">
         <Image
