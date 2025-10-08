@@ -1,3 +1,5 @@
+'use client';
+
 import type React from "react"
 import "./globals.css"
 import { Inter } from "next/font/google"
@@ -7,100 +9,9 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/sections/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { LanguageProvider } from "@/contexts/language-context"
+import LoadingScreen from "@/components/Loadingscreen"
 
 const inter = Inter({ subsets: ["latin"] })
-
-export const metadata = {
-  metadataBase: new URL("https://windaypvc.pt"),
-  title: {
-    default: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
-    template: "%s | Windaypvc",
-  },
-  description: "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
-  keywords: [
-    "janelas pvc",
-    "portas pvc",
-    "estores", 
-    "mosquiteiras",
-    "portadas",
-    "vedaluz",
-    "janelas eficientes",
-    "isolamento térmico",
-    "isolamento acústico",
-  ],
-  authors: [{ name: "Windaypvc" }],
-  creator: "Windaypvc",
-  publisher: "Windaypvc",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  alternates: {
-    canonical: "https://windaypvc.pt", // Changed from "/"
-    languages: {
-      "pt-PT": "https://windaypvc.pt",
-      "en-US": "https://windaypvc.pt/en",
-      "uk-UA": "https://windaypvc.pt/uk",
-    },
-  },
-  openGraph: {
-    title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
-    description: "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
-    url: "https://windaypvc.pt",
-    siteName: "Windaypvc",
-    images: [
-      {
-        url: "/winday.jpg", // This will resolve to https://windaypvc.pt/winday.jpg
-        width: 1200,
-        height: 630,
-        alt: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
-      },
-    ],
-    locale: "pt_PT",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Windaypvc - Janelas e Portas PVC de Alta Qualidade",
-    description: "Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção.",
-    images: ["/winday.jpg"], // This will resolve to https://windaypvc.pt/winday.jpg
-    creator: "@windaypvc",
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
-  verification: {
-    google: "google-site-verification-code",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  icons: {
-    icon: [
-      { url: "/logo192.png", sizes: "192x192", type: "image/png" },
-      { url: "/logo512.png", sizes: "512x512", type: "image/png" },
-    ],
-    shortcut: ["/logo192.png"],
-    apple: [{ url: "/apple-touch-icon.png" }],
-    other: [
-      {
-        rel: "manifest",
-        url: "/manifest.json",
-      },
-    ],
-  },
-}
 
 export default function RootLayout({
   children,
@@ -111,19 +22,53 @@ export default function RootLayout({
     <html lang="pt-PT">
       <head>
         <link rel="canonical" href="https://windaypvc.pt" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="description" content="Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção." />
+        <meta name="keywords" content="janelas pvc, portas pvc, estores, mosquiteiras, portadas, vedaluz, janelas eficientes, isolamento térmico, isolamento acústico" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Windaypvc - Janelas e Portas PVC de Alta Qualidade" />
+        <meta property="og:description" content="Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção." />
+        <meta property="og:url" content="https://windaypvc.pt" />
+        <meta property="og:site_name" content="Windaypvc" />
+        <meta property="og:image" content="https://windaypvc.pt/winday.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="pt_PT" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Windaypvc - Janelas e Portas PVC de Alta Qualidade" />
+        <meta name="twitter:description" content="Janelas e portas em PVC duráveis, isolantes e de design moderno, oferecendo conforto e eficiência com baixa manutenção." />
+        <meta name="twitter:image" content="https://windaypvc.pt/winday.jpg" />
+        <meta name="twitter:creator" content="@windaypvc" />
+        
+        {/* Icons */}
+        <link rel="icon" href="/logo192.png" sizes="192x192" type="image/png" />
+        <link rel="icon" href="/logo512.png" sizes="512x512" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        
+        <title>Windaypvc - Janelas e Portas PVC de Alta Qualidade</title>
       </head>
       <body className={inter.className}>
+        <LoadingScreen 
+          videoUrl="https://41edpnogvq.ucarecd.net/3cf8ab24-4c7f-43c8-aac7-99763baec311/"
+          minDuration={6000}
+        />
+        
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <LanguageProvider>
             <ScrollToTop />
             <div className="flex flex-col min-h-screen">
-              
               <Navbar />
               <main className="flex-grow">{children}</main>
               <Footer />
             </div>
           </LanguageProvider>
         </ThemeProvider>
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -153,6 +98,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'

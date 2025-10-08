@@ -47,7 +47,7 @@ export default function Home() {
       <ScrollHandler />
       <HeroSection />
       <ProductsSection />
-      <WindowSection />
+{/*       <WindowSection /> */}
       <PartnersSection />
       <AboutSection />
       <ServicesSection />

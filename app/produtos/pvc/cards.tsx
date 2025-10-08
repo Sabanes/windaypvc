@@ -96,7 +96,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
           <Link href="/contacto">
             <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
-              {t("pvc.more.info")}
+              {t("nav.quote")}
             </Button>
           </Link>
         </div>

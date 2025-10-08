@@ -6,8 +6,8 @@ import { WhatsAppIcon } from '@/components/whatsapp-icon'
 export function TopBar() {
   return (
     <div className="bg-[#c8c8c8] text-primary">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-13">
-        <div className="flex h-10 items-center md:justify-between justify-center ">
+      <div className="container">
+        <div className="flex h-10 items-center md:justify-between justify-center ml-2 px-5">
           <div className="flex items-center space-x-4">
             <a href="https://www.facebook.com/profile.php?id=61561480102114" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
               <Facebook className="h-5 w-5" />
