@@ -7,7 +7,7 @@ import { ServicesSection } from "@/components/sections/services-section"
 import { BenefitsSection } from "@/components/sections/benefits-section"
 import { QuoteSection } from "@/components/sections/quote-section"
 import { ScrollHandler } from "@/components/sceoll-handler" // We'll create this
-import Cinematic3DModel from '@/components/sections/window'
+import WindowSection from '@/components/sections/window'
 
 // Export metadata for the home page
 export const metadata: Metadata = {
@@ -47,7 +47,8 @@ export default function Home() {
       <ScrollHandler />
       <HeroSection />
       <ProductsSection />
-      {/* <Cinematic3DModel /> */}      <PartnersSection />
+      <WindowSection />
+      <PartnersSection />
       <AboutSection />
       <ServicesSection />
       <BenefitsSection />
