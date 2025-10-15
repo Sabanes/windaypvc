@@ -303,6 +303,13 @@ export function Navbar() {
               {t("product.gallery")}
             </Link>
             <Link
+              href="/blog"
+              className="text-[#493F0B] hover:text-[#493F0B]/80 font-medium transition-colors flex items-center py-2 border-b border-[#493F0B]/10 w-full"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blog
+            </Link>
+            <Link
               href="/contacto"
               className="text-[#493F0B] hover:text-[#493F0B]/80 font-medium transition-colors flex items-center py-2 border-b border-[#493F0B]/10 w-full"
               onClick={() => setMobileMenuOpen(false)}
