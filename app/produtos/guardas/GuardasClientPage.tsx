@@ -3,8 +3,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowLeft, Check, Shield, Eye, Ruler, Download, ChevronDown, ChevronUp } from "lucide-react"
-import { useState } from "react"
+import { ArrowLeft, Check, Shield, Eye, Ruler } from "lucide-react"
 import juliet from "./juliet.png"
 import crystal from "./view-crystal.webp"
 import AC1015A from "./AC10-15A.png-DE-768.webp"
@@ -16,11 +15,6 @@ import { useLanguage } from "@/contexts/language-context"
 
 export default function GuardasClientPage() {
   const { t } = useLanguage()
-  const [expandedProduct, setExpandedProduct] = useState<string | null>(null)
-
-  const toggleProduct = (productId: string) => {
-    setExpandedProduct(expandedProduct === productId ? null : productId)
-  }
 
   return (
     <div className="bg-[#d3d3d3] min-h-screen">
@@ -113,20 +107,12 @@ export default function GuardasClientPage() {
                   {t("guardas.types.juliet.desc")}
                 </p>
 
-                {/* Enhanced Specifications Accordion */}
+                {/* Technical Specifications - always visible */}
                 <div className="bg-[#d3d3d3]/20 rounded-lg p-4 mb-6">
-                  <button 
-                    onClick={() => toggleProduct('juliet')}
-                    className="w-full flex justify-between items-center text-left"
-                  >
-                    <span className="font-semibold text-[#493F0B]">
-                      {t("guardas.specifications.technical")}
-                    </span>
-                    {expandedProduct === 'juliet' ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
-                  </button>
-                  
-                  {expandedProduct === 'juliet' && (
-                    <div className="mt-4 space-y-4">
+                  <div className="font-semibold text-[#493F0B] mb-4">
+                    {t("guardas.specifications.technical")}
+                  </div>
+                  <div className="mt-4 space-y-4">
                       {/* Technical Specifications */}
                       <div className="space-y-2 text-sm text-[#493F0B]/80">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -167,7 +153,6 @@ export default function GuardasClientPage() {
                         
                       </div>
                     </div>
-                  )}
                 </div>
 
                 <ul className="space-y-3 mb-8">
@@ -186,7 +171,7 @@ export default function GuardasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="bg-[#493F0B] hover:bg-[#493F0B]/90 text-white px-6 py-3">
-                    {t("guardas.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>
@@ -202,20 +187,12 @@ export default function GuardasClientPage() {
                   {t("guardas.types.crystal.desc")}
                 </p>
 
-                {/* Enhanced Specifications Accordion */}
+                {/* Technical Specifications - always visible */}
                 <div className="bg-[#d3d3d3]/20 rounded-lg p-4 mb-6">
-                  <button 
-                    onClick={() => toggleProduct('crystal')}
-                    className="w-full flex justify-between items-center text-left"
-                  >
-                    <span className="font-semibold text-[#493F0B]">
-                      {t("guardas.specifications.technical")}
-                    </span>
-                    {expandedProduct === 'crystal' ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
-                  </button>
-                  
-                  {expandedProduct === 'crystal' && (
-                    <div className="mt-4 space-y-4">
+                  <div className="font-semibold text-[#493F0B] mb-4">
+                    {t("guardas.specifications.technical")}
+                  </div>
+                  <div className="mt-4 space-y-4">
                       {/* Technical Specifications */}
                       <div className="space-y-2 text-sm text-[#493F0B]/80">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -260,7 +237,6 @@ export default function GuardasClientPage() {
                         </div>  
                       </div>
                     </div>
-                  )}
                 </div>
 
                 <ul className="space-y-3 mb-8">
@@ -279,7 +255,7 @@ export default function GuardasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="bg-[#493F0B] hover:bg-[#493F0B]/90 text-white px-6 py-3">
-                    {t("guardas.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>
@@ -311,20 +287,12 @@ export default function GuardasClientPage() {
                 <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_15a.title")}</h3>
                 <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_15a.desc")}</p>
                 
-                {/* Enhanced Specifications Accordion */}
+                {/* Technical Specifications - always visible */}
                 <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
-                  <button 
-                    onClick={() => toggleProduct('ac15a')}
-                    className="w-full flex justify-between items-center text-left"
-                  >
-                    <span className="font-semibold text-[#493F0B] text-sm">
-                      {t("guardas.specifications.technical")} 
-                    </span>
-                    {expandedProduct === 'ac15a' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-                  </button>
-                  
-                  {expandedProduct === 'ac15a' && (
-                    <div className="mt-3 space-y-3">
+                  <div className="font-semibold text-[#493F0B] text-sm mb-3">
+                    {t("guardas.specifications.technical")} 
+                  </div>
+                  <div className="mt-3 space-y-3">
                       {/* Technical Specifications */}
                       <div className="space-y-1 text-xs text-[#493F0B]/80">
                         <p>
@@ -356,7 +324,6 @@ export default function GuardasClientPage() {
                         </div>
                       </div>
                     </div>
-                  )}
                 </div>
 
                 <ul className="space-y-2 mb-6">
@@ -371,7 +338,7 @@ export default function GuardasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
-                    {t("guardas.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>
@@ -386,20 +353,12 @@ export default function GuardasClientPage() {
                 <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_15b.title")}</h3>
                 <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_15b.desc")}</p>
                 
-                {/* Enhanced Specifications Accordion */}
+                {/* Technical Specifications - always visible */}
                 <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
-                  <button 
-                    onClick={() => toggleProduct('ac15b')}
-                    className="w-full flex justify-between items-center text-left"
-                  >
-                    <span className="font-semibold text-[#493F0B] text-sm">
-                      {t("guardas.specifications.technical")}  
-                    </span>
-                    {expandedProduct === 'ac15b' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-                  </button>
-                  
-                  {expandedProduct === 'ac15b' && (
-                    <div className="mt-3 space-y-3">
+                  <div className="font-semibold text-[#493F0B] text-sm mb-3">
+                    {t("guardas.specifications.technical")}  
+                  </div>
+                  <div className="mt-3 space-y-3">
                       {/* Technical Specifications */}
                       <div className="space-y-1 text-xs text-[#493F0B]/80">
                         <p>
@@ -431,7 +390,6 @@ export default function GuardasClientPage() {
                         </div>
                       </div>
                     </div>
-                  )}
                 </div>
 
                 <ul className="space-y-2 mb-6">
@@ -446,7 +404,7 @@ export default function GuardasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
-                    {t("guardas.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>
@@ -461,20 +419,12 @@ export default function GuardasClientPage() {
                 <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_15c.title")}</h3>
                 <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_15c.desc")}</p>
                 
-                {/* Enhanced Specifications Accordion */}
+                {/* Technical Specifications - always visible */}
                 <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
-                  <button 
-                    onClick={() => toggleProduct('ac15c')}
-                    className="w-full flex justify-between items-center text-left"
-                  >
-                    <span className="font-semibold text-[#493F0B] text-sm">
-                      {t("guardas.specifications.technical")} 
-                    </span>
-                    {expandedProduct === 'ac15c' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-                  </button>
-                  
-                  {expandedProduct === 'ac15c' && (
-                    <div className="mt-3 space-y-3">
+                  <div className="font-semibold text-[#493F0B] text-sm mb-3">
+                    {t("guardas.specifications.technical")} 
+                  </div>
+                  <div className="mt-3 space-y-3">
                       {/* Technical Specifications */}
                       <div className="space-y-1 text-xs text-[#493F0B]/80">
                         <p>
@@ -506,7 +456,6 @@ export default function GuardasClientPage() {
                         </div>
                       </div>
                     </div>
-                  )}
                 </div>
 
                 <ul className="space-y-2 mb-6">
@@ -521,7 +470,7 @@ export default function GuardasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
-                    {t("guardas.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>
@@ -536,20 +485,12 @@ export default function GuardasClientPage() {
                 <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_18.title")}</h3>
                 <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_18.desc")}</p>
                 
-                {/* Enhanced Specifications Accordion */}
+                {/* Technical Specifications - always visible */}
                 <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
-                  <button 
-                    onClick={() => toggleProduct('ac18')}
-                    className="w-full flex justify-between items-center text-left"
-                  >
-                    <span className="font-semibold text-[#493F0B] text-sm">
-                      {t("guardas.specifications.technical")}  
-                    </span>
-                    {expandedProduct === 'ac18' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-                  </button>
-                  
-                  {expandedProduct === 'ac18' && (
-                    <div className="mt-3 space-y-3">
+                  <div className="font-semibold text-[#493F0B] text-sm mb-3">
+                    {t("guardas.specifications.technical")}  
+                  </div>
+                  <div className="mt-3 space-y-3">
                       {/* Technical Specifications */}
                       <div className="space-y-1 text-xs text-[#493F0B]/80">
                         <p>
@@ -580,7 +521,6 @@ export default function GuardasClientPage() {
                         </div>
                       </div>
                     </div>
-                  )}
                 </div>
 
                 <ul className="space-y-2 mb-6">
@@ -595,7 +535,7 @@ export default function GuardasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
-                    {t("guardas.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>
@@ -610,20 +550,12 @@ export default function GuardasClientPage() {
                 <h3 className="text-xl font-bold text-[#493F0B] mb-3">{t("guardas.types.ac10_18a.title")}</h3>
                 <p className="text-[#493F0B]/80 mb-4">{t("guardas.types.ac10_18a.desc")}</p>
                 
-                {/* Enhanced Specifications Accordion */}
+                {/* Technical Specifications - always visible */}
                 <div className="bg-[#d3d3d3]/20 rounded-lg p-3 mb-4">
-                  <button 
-                    onClick={() => toggleProduct('ac18a')}
-                    className="w-full flex justify-between items-center text-left"
-                  >
-                    <span className="font-semibold text-[#493F0B] text-sm">
-                      {t("guardas.specifications.technical")} 
-                    </span>
-                    {expandedProduct === 'ac18a' ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
-                  </button>
-                  
-                  {expandedProduct === 'ac18a' && (
-                    <div className="mt-3 space-y-3">
+                  <div className="font-semibold text-[#493F0B] text-sm mb-3">
+                    {t("guardas.specifications.technical")} 
+                  </div>
+                  <div className="mt-3 space-y-3">
                       {/* Technical Specifications */}
                       <div className="space-y-1 text-xs text-[#493F0B]/80">
                         <p>
@@ -655,7 +587,6 @@ export default function GuardasClientPage() {
                         </div>
                       </div>
                     </div>
-                  )}
                 </div>
 
                 <ul className="space-y-2 mb-6">
@@ -670,7 +601,7 @@ export default function GuardasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
-                    {t("guardas.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>

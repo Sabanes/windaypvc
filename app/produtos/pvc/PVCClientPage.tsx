@@ -5,8 +5,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowLeft, Check, View } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
-import { useCallback, useEffect, useRef, useState } from "react"
-import type { MouseEvent, MutableRefObject } from "react"
+import { useState } from "react"
 import ArViewModal from "./modal"
 import EnhancedPVCSection from "./cards"
 
@@ -25,35 +24,11 @@ function ModelCard({
   id: string
 }) {
   const { t } = useLanguage()
-  const cardRef = useRef<HTMLDivElement | null>(null);
-  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
-
-  const toggleDetails = useCallback((e: MouseEvent<HTMLButtonElement>) => {
-    e.stopPropagation();
-    setIsDetailsOpen(prevState => !prevState);
-  }, []);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent | Event) {
-      if (cardRef.current && !cardRef.current.contains(event.target as Node) && isDetailsOpen) {
-        setIsDetailsOpen(false);
-      }
-    }
-    
-    if (isDetailsOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-    
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isDetailsOpen]);
 
   return (
-    <div 
-      ref={cardRef}
+    <div
       className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col"
-      data-card-id={id} // Add data attribute for debugging
+      data-card-id={id}
     >
       <div className="relative h-64">
         <Image
@@ -68,17 +43,14 @@ function ModelCard({
           <h3 className="text-xl font-bold text-[#493F0B] mb-2">{title}</h3>
           <p className="text-[#493F0B]/80 mb-4">{description}</p>
         </div>
-        <Button
-          onClick={toggleDetails}
-          className="w-full mt-2 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white"
-        >
-          {isDetailsOpen ? t("pvc.models.hide.details") : t("pvc.models.show.details")}
-        </Button>
-        {isDetailsOpen && (
-          <div className="whitespace-pre-wrap text-sm text-[#493F0B]/90 mt-4 bg-[#f1f1f1] p-4 rounded-md border border-[#493F0B]/20">
-            {technicalDetails}
-          </div>
-        )}
+        <div className="whitespace-pre-wrap text-sm text-[#493F0B]/90 mt-2 mb-4 bg-[#f1f1f1] p-4 rounded-md border border-[#493F0B]/20">
+          {technicalDetails}
+        </div>
+        <Link href="/contacto">
+          <Button className="w-full mt-2 bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
+            {t("nav.quote")}
+          </Button>
+        </Link>
       </div>
     </div>
   )

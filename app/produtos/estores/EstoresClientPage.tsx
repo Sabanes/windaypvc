@@ -111,7 +111,7 @@ export default function EstoresClientPage() {
                   </li>
                 </ul>
                 <Link href="/contacto">
-                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
+                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("nav.quote")}</Button>
                 </Link>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function EstoresClientPage() {
                   </li>
                 </ul>
                 <Link href="/contacto">
-                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("pvc.more.info")}</Button>
+                  <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">{t("nav.quote")}</Button>
                 </Link>
               </div>
             </div>

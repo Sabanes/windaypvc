@@ -114,7 +114,7 @@ export default function MosquiteirasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
-                    {t("mosquiteiras.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>
@@ -149,7 +149,7 @@ export default function MosquiteirasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
-                    {t("mosquiteiras.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>
@@ -184,7 +184,7 @@ export default function MosquiteirasClientPage() {
                 </ul>
                 <Link href="/contacto">
                   <Button className="w-full bg-[#493F0B] hover:bg-[#493F0B]/90 text-white">
-                    {t("mosquiteiras.more.info")}
+                    {t("nav.quote")}
                   </Button>
                 </Link>
               </div>

@@ -11,6 +11,9 @@ interface ProductCardProps {
   title: string | React.ReactNode;
   description: string;
   features: string[];
+  imageContainerClassName?: string;
+  imageWrapperClassName?: string;
+  imageClassName?: string;
   hasPreview?: boolean;
   hasModels?: boolean;
   hasPdf?: boolean;
@@ -23,6 +26,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
   title, 
   description, 
   features, 
+  imageContainerClassName,
+  imageWrapperClassName,
+  imageClassName,
   hasPreview = false,
   hasModels = false,
   hasPdf = false,
@@ -33,13 +39,32 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full">
       {/* Image Container - Fixed aspect ratio */}
-      <div className="relative w-full aspect-[4/3] bg-gray-50 overflow-hidden">
-        <div className="absolute inset-0 p-4 flex items-center justify-center">
+      <div
+        className={[
+          "relative w-full aspect-[4/3] bg-gray-50 overflow-hidden",
+          imageContainerClassName,
+        ]
+          .filter(Boolean)
+          .join(" ")}
+      >
+        <div
+          className={[
+            "absolute inset-0 p-4 flex items-center justify-center",
+            imageWrapperClassName,
+          ]
+            .filter(Boolean)
+            .join(" ")}
+        >
           <Image
             src={image}
             alt={alt}
             fill
-            className="object-fill hover:scale-105 transition-transform duration-300"
+            className={[
+              "object-fill hover:scale-105 transition-transform duration-300",
+              imageClassName,
+            ]
+              .filter(Boolean)
+              .join(" ")}
           />
         </div>
       </div>
@@ -184,7 +209,7 @@ const EnhancedPVCSection: React.FC<EnhancedPVCSectionProps> = ({ openModal }) =>
 
           {/* Door */}
           <ProductCard
-            image="https://2iygfm600n.ucarecd.net/930ae03d-2161-4943-86ba-1eeae8467b4d/-/preview/1000x1000/"
+            image="/door.jpg"
             alt="Door"
             title={t("pvc.categories.door.title")}
             description={t("pvc.categories.door.desc")}
@@ -193,6 +218,9 @@ const EnhancedPVCSection: React.FC<EnhancedPVCSectionProps> = ({ openModal }) =>
               t("pvc.categories.door.feature2"),
               t("pvc.categories.door.feature3")
             ]}
+            imageContainerClassName="aspect-[3/4]"
+            imageWrapperClassName="p-2"
+            imageClassName="object-contain"
             hasPdf={true}
           />
         </div>
