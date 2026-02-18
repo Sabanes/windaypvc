@@ -220,7 +220,7 @@ const EnhancedPVCSection: React.FC<EnhancedPVCSectionProps> = ({ openModal }) =>
             ]}
             imageContainerClassName="aspect-[3/4]"
             imageWrapperClassName="p-2"
-            imageClassName="object-contain"
+            imageClassName="object-contain object-top"
             hasPdf={true}
           />
         </div>
