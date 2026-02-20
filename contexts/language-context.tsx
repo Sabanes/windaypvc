@@ -2,12 +2,13 @@
 import pt from "./locales/pt.json"
 import en from "./locales/en.json"
 import uk from "./locales/ukr.json"
+import ru from "./locales/ru.json"
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
 import { usePathname } from "next/navigation"
 
 // Define available languages
-export type Language = "pt" | "en" | "uk"
+export type Language = "pt" | "en" | "uk" | "ru"
 
 // Define the context type
 type LanguageContextType = {
@@ -33,6 +34,7 @@ const translations: Record<Language, Record<string, string>> = {
   pt,
   en,
   uk,
+  ru,
 }
 
 // Create a provider component
@@ -59,7 +61,7 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     } else {
       // Get browser language
       const browserLanguage = navigator.language.split("-")[0] as Language
-      if (browserLanguage === "en" || browserLanguage === "pt" || browserLanguage === "uk") {
+      if (browserLanguage === "en" || browserLanguage === "pt" || browserLanguage === "uk" || browserLanguage === "ru") {
         setLanguage(browserLanguage)
         localStorage.setItem("NEXT_LOCALE", browserLanguage)
       }
